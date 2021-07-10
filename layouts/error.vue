@@ -24,7 +24,7 @@ export default {
   data () {
     return {
       pageNotFound: '404 Not Found',
-      otherError: 'An error occurred 2'
+      otherError: 'An error occurred'
     }
   },
   head () {
