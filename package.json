@@ -19,7 +19,9 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "“echo '**** aom *****'"
+      "pre-commit": "“echo '**** aom *****'",
+      "pre-push": "yarn test"
+
     }
   },
   "dependencies": {
