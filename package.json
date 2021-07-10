@@ -16,13 +16,14 @@
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
-    "*.{css,scss,ts,js,json}": "prettier --write",
-    "*.{css,vue,scss}": "stylelint"
+    "*.{css,vue,scss}": "stylelint",
+    "*.{css,scss,ts,js,json}": "prettier --write"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "commit-msg": "commitlint",
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
     }
   },
   "dependencies": {
