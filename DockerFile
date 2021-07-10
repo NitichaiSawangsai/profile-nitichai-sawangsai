@@ -1,0 +1,22 @@
+FROM node:15.9-alpine
+
+WORKDIR /usr/src/app
+
+RUN yarn
+
+RUN yarn global add nuxt@^2.15.*
+
+COPY . .
+
+ENV NODE_ENV production
+
+ENV HOST 0.0.0.0
+
+ENV PORT 3000
+
+RUN nuxt build
+
+EXPOSE 3000
+
+CMD ["nuxt", "start"]
+
