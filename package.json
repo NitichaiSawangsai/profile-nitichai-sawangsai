@@ -9,19 +9,19 @@
     "generate": "nuxt generate",
     "test": "jest",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint:style": "stylelint \"**/*.{vue,css,scss}\" --ignore-path .gitignore",
+    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
     "prepush": "yarn lint:js --fix && yarn lint:style --fix",
     "postinstall": "husky install"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
-    "*.{css,vue,scss}": "stylelint"
+    "*.{css,vue}": "stylelint"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged",
+      "pre-commit": "yarn lint-staged",
       "pre-push": "yarn test"
     }
   },
