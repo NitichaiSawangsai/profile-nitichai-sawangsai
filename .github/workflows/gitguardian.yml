@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Scan commit with ggshield
-        uses: ./../../ # local action compiles docker image and runs scan ci
+        uses: ./../ # local action compiles docker image and runs scan ci
         with:
           args: -v --all-policies
         env:
