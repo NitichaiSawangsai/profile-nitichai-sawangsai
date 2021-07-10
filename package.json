@@ -17,13 +17,14 @@
   "lint-staged": {
     "*.{js,vue}": "eslint",
     "*.{css,vue,scss}": "stylelint",
-    "*.[js,ts,json,scss,css,vue,html]": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
+    // "*.[js,ts,json,scss,css,vue,html]": [
+    //   "prettier --single-quote --write",
+    //   "git add"
+    // ]
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
