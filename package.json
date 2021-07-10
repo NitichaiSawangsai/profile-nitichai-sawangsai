@@ -1,6 +1,6 @@
 {
   "name": "profile-nitichai-sawangsai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -49,6 +49,7 @@
     "eslint-plugin-wdio": "^7.4.2",
     "jest": "^27.0.5",
     "prettier": "^2.3.2",
+    "standard-version": "^9.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-config-standard": "^22.0.0",
