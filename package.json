@@ -11,9 +11,7 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "prepush": "yarn lint:js --fix && yarn lint:style --fix",
-    "postinstall": "husky install",
-    "prepare": "husky install"
+    "prepush": "yarn lint:js --fix && yarn lint:style --fix"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -21,6 +19,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "echo ”[Husky] pre-commit” | lint-staged"
     }
   },
@@ -58,7 +57,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.13.0",
     "eslint-plugin-wdio": "^7.4.2",
-    "husky": "^7.0.1",
+    "husky": "4.3.8",
     "jest": "^27.0.5",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.2",
