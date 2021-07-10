@@ -5,9 +5,9 @@ module.exports = {
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ['v-deep'],
-      },
-    ],
+        ignorePseudoElements: ['v-deep']
+      }
+    ]
   },
-  extends: ['stylelint-config-standard'],
-};
+  extends: ['stylelint-config-standard']
+}

@@ -51,7 +51,7 @@
           <div class="text-xs-right">
             <em><small>&mdash; John Leider</small></em>
           </div>
-          <hr class="my-3" />
+          <hr class="my-3">
           <a
             href="https://nuxtjs.org/"
             target="_blank"
@@ -59,7 +59,7 @@
           >
             Nuxt Documentation
           </a>
-          <br />
+          <br>
           <a
             href="https://github.com/nuxt/nuxt.js"
             target="_blank"
@@ -71,8 +71,8 @@
         <v-card-actions>
           <v-spacer />
           <v-btn color="primary" nuxt to="/inspire">
-Continue
-</v-btn>
+            Continue
+          </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
