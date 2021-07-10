@@ -21,8 +21,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint",
-      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "commitlint",
       "pre-push": "yarn test"
     }
   },
