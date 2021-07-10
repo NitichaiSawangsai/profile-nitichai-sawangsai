@@ -19,8 +19,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "“echo '**** aom *****'",
-      "pre-push": "yarn test"
+      "pre-commit": "echo 'AOMMM RUNNING HOOK!'"
     }
   },
   "dependencies": {
@@ -47,6 +46,7 @@
     "@nuxtjs/vuetify": "^1.12.1",
     "@types/eslint": "^7.2.14",
     "@vue/test-utils": "^1.2.1",
+    "@wdio/cli": "^7.7.4",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.0.5",
@@ -67,9 +67,5 @@
     "stylelint-config-standard": "^22.0.0",
     "ts-jest": "^27.0.3",
     "vue-jest": "^3.0.4"
-  },
-  "main": "index.js",
-  "repository": "git@github.com:NitichaiSawangsai/profile-nitichai-sawangsai.git",
-  "author": "NitichaiAom <NitichaiSawangsai@gmail.com>",
-  "license": "MIT"
+  }
 }
