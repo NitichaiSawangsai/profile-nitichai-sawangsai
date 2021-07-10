@@ -4,11 +4,7 @@ module.exports = {
     node: true,
     browser: true
   },
-  extends: [
-    '@nuxtjs',
-    'plugin:wdio/recommended',
-    'plugin:nuxt/recommended'
-  ],
+  extends: ['@nuxtjs', 'plugin:wdio/recommended', 'plugin:nuxt/recommended'],
   rules: {},
   globals: {
     $nuxt: true
@@ -16,7 +12,5 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
-  plugins: [
-    'wdio'
-  ]
+  plugins: ['wdio']
 }
