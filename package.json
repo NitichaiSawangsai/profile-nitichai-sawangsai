@@ -13,6 +13,10 @@
     "lint": "yarn lint:js && yarn lint:style",
     "prepush": "yarn lint:js --fix && yarn lint:style --fix"
   },
+  "engines": {
+    "node": "^14.16.0",
+    "yarn": "^1.22.5"
+  },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint",
     "*.{css,scss,vue}": "stylelint"
