@@ -22,7 +22,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "commitlint",
+      "pre-commit": "yarn commitlint",
       "pre-push": "yarn test"
     }
   },
