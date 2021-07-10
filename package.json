@@ -17,10 +17,7 @@
   "lint-staged": {
     "*.{js,vue}": "eslint",
     "*.{css,vue,scss}": "stylelint",
-    // "*.[js,ts,json,scss,css,vue,html]": [
-    //   "prettier --single-quote --write",
-    //   "git add"
-    // ]
+    "*.{css,scss,ts,js,json}": "prettier --write"
   },
   "husky": {
     "hooks": {
