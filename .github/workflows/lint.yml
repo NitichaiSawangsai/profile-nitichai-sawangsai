@@ -5,12 +5,6 @@ on:
     branches:
       - develop
       - master
-      
-updates:
-  reviewers:
-    - nitichaisawangsai
-  assignees:
-    - nitichaisawangsai
 
 jobs:
   run-linters:
