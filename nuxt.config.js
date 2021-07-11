@@ -70,8 +70,8 @@ export default {
   // i18n setting
   i18n: {
     locales: [
-      { code: 'en', file: 'en.json' },
-      { code: 'th', file: 'th.json' }
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'th', name: 'Thailand', file: 'th.json' }
     ],
     langDir: 'locales/',
     lazy: true,
