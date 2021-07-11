@@ -43,7 +43,7 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/scss/main.scss'],
     // treeShake: true,
     theme: {
       dark: false,
@@ -70,8 +70,8 @@ export default {
   // i18n setting
   i18n: {
     locales: [
-      { code: 'en', file: 'en.json' },
-      { code: 'th', file: 'th.json' }
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'th', name: 'Thailand', file: 'th.json' }
     ],
     langDir: 'locales/',
     lazy: true,
