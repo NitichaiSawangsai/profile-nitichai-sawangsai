@@ -14,7 +14,7 @@
         </v-row>
       </header>
 
-      <div id="chat-box-area">
+      <div>
         <div class="card-content chat-content">
           <div class="content pt-3">
             <div class="chat-message-group">
@@ -60,7 +60,6 @@
                 </div>
               </div>
             </div>
-
             <div class="chat-message-group">
               <div class="chat-thumb">
                 <figure class="image pl-2">
@@ -79,16 +78,20 @@
             </div>
           </div>
         </div>
-        <footer id="chat-box-textbox" class="card-footer">
-          <div style="width: 63%;">
-            <textarea id="chatTextarea" class="chat-textarea" placeholder="Digite aqui" />
-          </div>
-          <div class="has-text-centered" style="width: 37%;">
-            <a class="button is-white">
-              <i class="fa fa-smile-o fa-5" aria-hidden="true" />
-            </a>
-            <a class="button is-white">send</a>
-          </div>
+        <footer class="footer-chat mt-5">
+          <v-row no-gutters>
+            <v-col cols="10">
+              <textarea class="chat-textarea" placeholder="Aa" />
+            </v-col>
+            <v-col cols="2">
+              <div class="has-text-centered" style="width: 37%;">
+                <a class="button is-white">
+                  <i class="fa fa-smile-o fa-5" aria-hidden="true" />
+                </a>
+                <v-icon class="mt-4 ml-3" dense color="red" v-text="'mdi-send'" />
+              </div>
+            </v-col>
+          </v-row>
         </footer>
       </div>
     </div>
@@ -107,6 +110,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.footer-chat {
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+}
+
 .header-title-col {
   display: flex;
   align-content: center;
@@ -122,8 +129,7 @@ export default {
   bottom: 0;
   right: 0;
   width: 300px;
-  margin: 40px;
-  margin-bottom: 0;
+  margin: 0 3rem;
 }
 
 .allUsersList {
@@ -171,7 +177,6 @@ export default {
 
 .usersChatList .card-header {
   background: #683db8;
-  // font-size: 13px;
 }
 
 .chat-content {
@@ -181,6 +186,7 @@ export default {
 
 .chat-box .card {
   border-radius: 4px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
 }
 
 .chat-box .card-header {
@@ -188,7 +194,6 @@ export default {
 }
 
 .card-header-title i {
-  // font-size: 10px;
   color: #32e4cd;
   margin-right: 6px;
 }
@@ -215,7 +220,6 @@ export default {
   text-align: right;
   padding: 10px;
   margin-bottom: 4px;
-  // font-size: 13px;
 }
 
 .my-content small {
@@ -230,9 +234,8 @@ export default {
 }
 
 .chat-textarea {
-  // font-size: 14px;
   padding: 8px;
-  height: 40px;
+  height: 3rem;
   width: 100%;
   border: none;
   overflow: auto;
