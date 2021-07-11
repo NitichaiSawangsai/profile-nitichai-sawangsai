@@ -74,9 +74,6 @@
                     <div class="bounce3" />
                   </div>
                 </div>
-                <div class="from">
-                  28 Jul 2021  04:55
-                </div>
               </div>
             </div>
           </div>
