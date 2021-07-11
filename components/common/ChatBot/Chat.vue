@@ -55,6 +55,9 @@
                 <div class="message">
                   test2
                 </div>
+                <div class="message">
+                  test2 Nitichai sdaisjdi akhjdsfiashd
+                </div>
                 <div class="from">
                   28 Jul 2021  04:55
                 </div>
@@ -111,6 +114,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$background-chat: #683db8;
+
 .bg-whitesmoke {
   background-color: whitesmoke;
 }
@@ -147,7 +152,7 @@ export default {
 }
 
 .allUsersList .card-header {
-  background: #683db8;
+  background: $background-chat;
   color: #fff;
   padding: 10px;
 }
@@ -185,7 +190,7 @@ export default {
 }
 
 .usersChatList .card-header {
-  background: #683db8;
+  background: $background-chat;
 }
 
 .chat-content {
@@ -199,7 +204,7 @@ export default {
 }
 
 .chat-box .card-header {
-  background: #683db8;
+  background: $background-chat;
 }
 
 .card-header-title i {
@@ -220,26 +225,6 @@ export default {
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 0;
-}
-
-.my-content .message {
-  float: right;
-  background: #683db8;
-  color: #fff;
-  text-align: right;
-  padding: 10px;
-  margin-bottom: 4px;
-}
-
-.my-content small {
-  display: block;
-  float: right;
-  width: 100%;
-  text-align: right;
-}
-
-.my-content .chat-content small {
-  float: right;
 }
 
 .chat-textarea {
@@ -274,6 +259,7 @@ export default {
   font-size: 15px;
   border-radius: 5px;
   margin-bottom: 3px;
+  margin-right: 3%;
 }
 
 .chat-messages .from {
@@ -291,7 +277,7 @@ export default {
 
 .writer-user .chat-messages .message {
   float: right;
-  background: #683db8;
+  background: $background-chat;
   color: #fff;
 }
 
@@ -309,20 +295,6 @@ export default {
 .chat-box .card-header-icon i {
   color: #fff;
   font-size: 13px;
-}
-
-/* CSSS */
-.outside-box {
-  height: 100px;
-  background: #f8c;
-  width: 200px;
-  margin: 20px;
-  overflow: auto;
-}
-
-.outside-box .content-insider {
-  height: 300px;
-  background: #c9c;
 }
 
 /* CSS Spinner */
@@ -372,16 +344,4 @@ export default {
     transform: scale(1);
   }
 }
-
-/* EmojiBox */
-.emojiBox {
-  width: 150px;
-  margin: 30px;
-}
-
-.emojiBox .box {
-  height: 100px;
-  padding: 4px;
-}
-
 </style>
