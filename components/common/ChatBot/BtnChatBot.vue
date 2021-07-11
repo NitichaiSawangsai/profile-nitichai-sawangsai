@@ -13,6 +13,7 @@
           v-bind="attrs"
           link
           target="_blank"
+          @click="openChat()"
           v-on="on"
         >
           <v-icon class="position-icon" x-large color="white" v-text="'mdi-chat-processing-outline'" />
@@ -25,6 +26,11 @@
 
 <script>
 export default {
-  name: 'BtnChatBot'
+  name: 'BtnChatBot',
+  methods: {
+    openChat (_e) {
+      this.$emit('openChat', true)
+    }
+  }
 }
 </script>
