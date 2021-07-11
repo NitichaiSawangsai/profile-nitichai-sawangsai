@@ -39,7 +39,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios', '@nuxtjs/auth-next', '@nuxtjs/moment'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/auth-next', '@nuxtjs/moment', 'nuxt-i18n'],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -65,5 +65,18 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['vee-validate/dist/rules']
+  },
+
+  // i18n setting
+  i18n: {
+    locales: [
+      { code: 'en', file: 'en.json' },
+      { code: 'th', file: 'th.json' }
+    ],
+    langDir: 'locales/',
+    lazy: true,
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: false
   }
 }
