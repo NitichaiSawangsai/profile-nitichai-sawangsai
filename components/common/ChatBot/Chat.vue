@@ -15,11 +15,11 @@
       </header>
 
       <div>
-        <div class="card-content chat-content">
-          <div class="content pt-3">
+        <div class="card-content chat-content bg-whitesmoke">
+          <div class="pt-3">
             <div class="chat-message-group">
               <div class="chat-thumb">
-                <figure class="image pl-2">
+                <figure class="image">
                   <img width="25" src="~/assets/img/chat/img-chat.jpeg">
                 </figure>
               </div>
@@ -62,7 +62,7 @@
             </div>
             <div class="chat-message-group">
               <div class="chat-thumb">
-                <figure class="image pl-2">
+                <figure class="image">
                   <img width="25" src="~/assets/img/chat/img-chat.jpeg">
                 </figure>
               </div>
@@ -74,11 +74,15 @@
                     <div class="bounce3" />
                   </div>
                 </div>
+                <div class="from">
+                  28 Jul 2021  04:55
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <footer class="footer-chat mt-5">
+        <!-- <div class="mb-5" /> -->
+        <footer class="footer-chat">
           <v-row no-gutters>
             <v-col cols="10">
               <textarea class="chat-textarea" placeholder="Aa" />
@@ -110,6 +114,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+
+.image {
+  margin-left: 1rem;
+}
+
 .footer-chat {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
 }
@@ -253,9 +265,9 @@ export default {
 
 .chat-message-group .chat-messages {
   float: left;
-  width: 70%;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  width: 80%;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .chat-message-group .message {
