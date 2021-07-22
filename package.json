@@ -38,7 +38,7 @@
     "nuxt-i18n": "^6.27.3",
     "vee-validate": "^3.4.10",
     "vue-moment": "^4.1.0",
-    "vuetify": "^2.5.6"
+    "vuetify": "^2.5.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
