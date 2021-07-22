@@ -1,11 +1,6 @@
 name: "GitGuardian Scan"
 
-# Trigger on push
 on:
-  push:
-    branches: 
-      - develop
-      - master
   pull_request:
     branches:
       - develop
@@ -16,14 +11,6 @@ jobs:
     name: GitGuardian scan
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "Hello ${{ github.event.inputs.name }}!"
-          echo "- in ${{ github.event.inputs.home }}!"
-          echo "- in before ${{ github.event.before }}!"
-          echo "- in base ${{ github.event.base }}!"
-          echo "- in sha ${{ github.event.pull_request.base.sha }}!"
-          echo "- in default_branch ${{ github.event.repository.default_branch }}!"
-          echo "- in GITGUARDIAN_API_KEY ${{ secrets.GITGUARDIAN_API_KEY }}!"
       - name: Checkout
         uses: actions/checkout@v2
         with:
