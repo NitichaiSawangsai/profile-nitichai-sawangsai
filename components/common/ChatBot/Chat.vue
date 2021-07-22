@@ -20,7 +20,7 @@
             <div class="chat-message-group">
               <div class="chat-thumb">
                 <figure class="image">
-                  <img width="25" src="~/assets/img/chat/img-chat.jpeg">
+                  <img width="25" alt="user" src="~/assets/img/chat/img-chat.jpeg">
                 </figure>
               </div>
               <div class="chat-messages">
@@ -45,7 +45,7 @@
             <div class="chat-message-group">
               <div class="chat-thumb">
                 <figure class="image">
-                  <img width="25" src="~/assets/img/chat/img-chat.jpeg">
+                  <img width="25" alt="user" src="~/assets/img/chat/img-chat.jpeg">
                 </figure>
               </div>
               <div class="chat-messages">
@@ -66,7 +66,7 @@
             <div class="chat-message-group">
               <div class="chat-thumb">
                 <figure class="image">
-                  <img width="25" src="~/assets/img/chat/img-chat.jpeg">
+                  <img width="25" alt="user" src="~/assets/img/chat/img-chat.jpeg">
                 </figure>
               </div>
               <div class="chat-messages">
@@ -81,7 +81,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="mb-5" /> -->
         <footer class="footer-chat">
           <v-row no-gutters>
             <v-col cols="10">
