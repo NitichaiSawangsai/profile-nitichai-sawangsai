@@ -3,6 +3,7 @@ name: Run Sonar cloud analysis
 on:
   push:
     branches:
+      - master
       - develop
 
 jobs:
