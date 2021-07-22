@@ -22,4 +22,6 @@ jobs:
         run: yarn install
 
       - name: Run linters
-        run: yarn run lint
+        run: 
+          - yarn run lint
+          - yarn run test
