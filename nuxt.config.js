@@ -36,7 +36,7 @@ export default {
   css: ['vuetify/dist/vuetify.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/lodash.js', '~/plugins/vuetify.js'],
+  plugins: ['~/plugins/head-util.js', '~/plugins/lodash.js', '~/plugins/vuetify.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
