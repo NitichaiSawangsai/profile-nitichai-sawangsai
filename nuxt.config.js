@@ -1,10 +1,20 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  env: {
+    version: process.env.VERSION
+  },
+  publicRuntimeConfig: {
+    nodeEnv: process.env.NODE_ENV,
+    version: process.env.VERSION,
+    statusProject: process.env.STATUS_PROJECT,
+    dateStartDeploy: process.env.DATE_START_DEPLOY
+
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - profile-nitichai-sawangsai',
-    title: 'profile-nitichai-sawangsai',
+    titleTemplate: '%s - Nitichai Sawangsai',
+    title: 'Nitichai Sawangsai',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,7 +31,7 @@ export default {
   css: ['vuetify/dist/vuetify.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vuetify.js'],
+  plugins: ['~/plugins/lodash.js', '~/plugins/vuetify.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
