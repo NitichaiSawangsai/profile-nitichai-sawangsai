@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon-Logo-Linkedin" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <circle id="Ellipse_26" cx="12" cy="12" r="12" fill="#0077b7"/>
+    <g id="Group_10426" transform="translate(-180.996 -178)">
+        <path id="Rectangle_145315" d="M.473 0h1.606a.473.473 0 0 1 .473.473v7.092a.476.476 0 0 1-.476.476H.473A.473.473 0 0 1 0 7.568V.473A.473.473 0 0 1 .473 0z" class="cls-2" transform="translate(187.37 187.959)"/>
+        <ellipse id="Ellipse_27" cx="1.65" cy="1.639" class="cls-2" rx="1.65" ry="1.639" transform="translate(186.996 184)"/>
+        <path id="Path_9653" d="M196.709 188.477a2.564 2.564 0 0 0-2.409 1.123v-.631a.373.373 0 0 0-.375-.372h-1.8a.373.373 0 0 0-.375.372v7.3a.374.374 0 0 0 .375.373h1.8a.374.374 0 0 0 .375-.373v-3.912c.047-.525.28-1.7 1.428-1.7 1.48 0 1.331 1.711 1.331 2.217v3.392a.374.374 0 0 0 .375.373h1.866a.374.374 0 0 0 .375-.373v-3.5c0-1.52.017-4.289-2.966-4.289z" class="cls-2" transform="translate(-.679 -.64)"/>
+    </g>
+</svg>
