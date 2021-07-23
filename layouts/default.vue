@@ -13,8 +13,9 @@
         <div class="position-center">
           <v-img class="img-develoment" alt="development" :lazy-src="require('~/assets/icons/gif/development.gif')" :src="require('~/assets/icons/gif/development.gif')" />
         </div>
-        <p>ขออภัยในความไม่สะดวก เว็บนี้กำลังปรับปรุง สามารถเริ่มใช้งานได้เดือน {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY HH:mm:ss') }}</p>
-        <p>Sorry for the inconvenience, This website is improving. Can start using the {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY HH:mm:ss') }}</p>
+        <p>ขออภัยในความไม่สะดวก เว็บนี้กำลังปรับปรุง สามารถเริ่มใช้งานได้เดือน {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY') }} เวลา {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('HH:mm:ss') }}</p>
+        <p>We sincerely apologize for the inconvenience. Our site is currently undergoing scheduled maintenance. <br>
+          The website will be back on {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY') }} at {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('HH:mm:ss') }}</p>
         <div class="position-center mr-14 pt-2">
           <v-tooltip class="tooltip-icon-social" bottom>
             <template #activator="{ on, attrs }">
