@@ -10,9 +10,9 @@
     </v-app>
     <v-app v-else class="development">
       <div class="box-center font-alert">
-        <center>
-          <img alt="development" src="~/assets/icons/gif/development.gif">
-        </center>
+        <div class="position-img">
+          <img class="img-develoment" alt="development" src="~/assets/icons/gif/development.gif">
+        </div>
         <p>ขออภัยในความไม่สะดวก เว็บนี้กำลังปรับปรุง สามารถเริ่มใช้งานได้เดือน {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY HH:mm:ss') }}</p>
         <p>sorry for the inconvenience This website is improving. Can start using the {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY HH:mm:ss') }}</p>
       </div>
@@ -66,6 +66,15 @@ export default {
 
   .font-alert {
     font-size: 20px;
+  }
+
+  .img-develoment {
+    max-width: 40rem;
+  }
+
+  .position-img {
+    display: block;
+    text-align: -webkit-center;
   }
 }
 </style>
