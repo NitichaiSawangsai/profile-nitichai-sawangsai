@@ -45,8 +45,8 @@
                 <img
                   class="icon-social"
                   v-bind="attrs"
-                  width="24"
                   height="24"
+                  width="24"
                   alt="copy-link"
                   :src="require('~/assets/icons/png/gmail.png')"
                   v-on="on"
