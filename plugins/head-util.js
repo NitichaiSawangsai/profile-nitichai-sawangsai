@@ -40,7 +40,8 @@ export default ({ app }, inject) => {
         property: 'og:image',
         name: 'og:image',
         content: textSEO.meta['og:image']
-      }
+      },
+      { property: 'og:type', name: 'og:type', content: textSEO.meta['og:type'] }
     ],
     link: [
       {

@@ -59,7 +59,13 @@ export default {
         property: 'og:image',
         name: 'og:image',
         content: textSEO.meta['og:image']
-      }
+      },
+      { property: 'og:type', name: 'og:type', content: textSEO.meta['og:type'] },
+      { property: 'facebook:title', name: 'facebook:title', content: textSEO.meta['facebook:title'] },
+      { property: 'facebook:image', name: 'facebook:image', content: textSEO.meta['facebook:image'] },
+      { property: 'linkedin:title', name: 'linkedin:title', content: textSEO.meta['linkedin:title'] },
+      { property: 'linkedin:image', name: 'linkedin:image', content: textSEO.meta['linkedin:image'] },
+      { property: 'twitter:card', name: 'twitter:card', content: textSEO.meta['twitter:card'] }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: textSEO.link.icon },
