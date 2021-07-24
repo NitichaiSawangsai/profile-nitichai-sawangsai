@@ -67,6 +67,11 @@
 <script>
 export default {
   name: 'Deployment',
+  head () {
+    return {
+      title: 'Home'
+    }
+  },
   methods: {
     onCopy () {
       const copyText = window.location.href
