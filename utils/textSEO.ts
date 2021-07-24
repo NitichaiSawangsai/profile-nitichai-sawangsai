@@ -1,4 +1,4 @@
-const description = 'แสดงผลงานที่ผ่านมาของนายนิธิชัย แสวงสาย จบสาขาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยบูรพา รับสร้างเว็บไซต์ เว็บแอปพลิเคชัน สามาถติดต่อทาง https://nitichai.vercel.app อีเมล์ NitichaiSawangsai@gmail.com © 2021 สร้างโดย นิธิชัย แสวงสาย สงวนลิขสิทธิ์'
+const description = 'Make your own professional website and application with high potential Software Engineer team. Best installation and maintenance service. Alternatives framework by NuxtJs, Laravel, Reactjs, Ionic and Node js. Customize your own website and application now with us. Contact us via NitichaiSawangsai@gmail.com'
 export default {
   meta: {
     charset: 'utf-8',
@@ -9,7 +9,7 @@ export default {
     'format-detection': 'telephone=no',
     title: 'Home',
     description,
-    keywords: ['Nitichai', 'Sawangsai', 'Nitichai Sawangsai', 'nitichaisawangsai', 'NitichaiSawangsai', 'รับทำเว็บ', 'สร้างเว็บ', 'เว็บแอปพลิเคชัน', 'เว็บไซต์', 'website', 'web application', 'วิศวกรรมซอฟต์แวร์', 'Software Engineering', 'Software Development Engineer'],
+    keywords: ['Nitichai', 'Sawangsai', 'Nitichai Sawangsai', 'nitichaisawangsai', 'NitichaiSawangsai', 'รับทำเว็บ', 'สร้างเว็บ', 'เว็บแอปพลิเคชัน', 'เว็บไซต์', 'website', 'web application', 'วิศวกรรมซอฟต์แวร์', 'Software Engineering', 'Software Development Engineer', 'NuxtJs', 'Laravel', 'Reactjs', 'Ionic', 'Node js'],
     'og:title': 'Home | Nitichai Sawangsai',
     'og:url': 'https://nitichai.vercel.app',
     'og:site_name': 'nitichai',
