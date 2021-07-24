@@ -81,8 +81,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+// $vuetify.breakpoint.width
 .development {
   .box-center {
+    max-width: 59rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -107,9 +109,21 @@ export default {
     margin-right: 4px;
   }
 
-  @media only screen and (max-width: 425px) {
-    .img-develoment {
-      max-width: 20rem;
+  @media only screen and (max-width: 931px) {
+    .box-center {
+      max-width: 50rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .box-center {
+        max-width: 38rem;
+      }
+
+      @media only screen and (max-width: 425px) {
+        .img-develoment {
+          max-width: 20rem;
+        }
+      }
     }
   }
 }
