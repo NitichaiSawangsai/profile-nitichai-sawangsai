@@ -8,7 +8,7 @@
       We sincerely apologize for the inconvenience. Our site is currently undergoing scheduled maintenance. <br>
       The website will be back on {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY') }} at {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('HH:mm:ss') }}
     </p>
-    <div class="position-center mr-14 pt-2">
+    <div class="position-center mr-14 pt-2 position-icon-social">
       <v-tooltip class="tooltip-icon-social" bottom>
         <template #activator="{ on, attrs }">
           <a href="https://www.facebook.com/profile.php?id=100017880492777" target="facebook-me">
@@ -112,6 +112,10 @@ export default {
   @media only screen and (max-width: 931px) {
     .box-center {
       max-width: 50rem;
+    }
+
+    .position-icon-social {
+      margin-left: 3rem !important;
     }
 
     @media only screen and (max-width: 768px) {

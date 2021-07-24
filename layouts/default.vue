@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 import BtnChatBot from '~/components/common/ChatBot/BtnChatBot'
@@ -32,15 +33,17 @@ export default {
     Chat,
     Deployment
   },
-  data: () => ({
-    statusChat: false
-  }),
+  computed: {
+    ...mapState({
+      statusChat: state => state.chat.statusChat
+    })
+  },
   methods: {
     closeChat (event) {
-      this.statusChat = event
+      this.$store.commit('chat/setStatusChat', event)
     },
     openChat (event) {
-      this.statusChat = event
+      this.$store.commit('chat/setStatusChat', event)
     }
   }
 }

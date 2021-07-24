@@ -136,7 +136,7 @@ $background-chat: #683db8;
 }
 
 .chat-box {
-  font-family: $font-kanit;
+  // font-family: $font-kanit;
   font-size: 16px;
   position: fixed;
   bottom: 0;
