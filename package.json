@@ -36,7 +36,7 @@
     "lodash": "^4.17.21",
     "material-design-icons-iconfont": "^6.1.0",
     "nuxt": "^2.15.7",
-    "nuxt-i18n": "^6.27.3",
+    "nuxt-i18n": "^6.28.0",
     "vee-validate": "^3.4.11",
     "vuetify": "^2.5.7"
   },
