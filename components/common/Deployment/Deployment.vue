@@ -3,11 +3,12 @@
     <div class="position-center">
       <v-img class="img-develoment" alt="development" :lazy-src="require('~/assets/icons/gif/development.gif')" :src="require('~/assets/icons/gif/development.gif')" />
     </div>
-    <p>ขออภัยในความไม่สะดวก เว็บนี้กำลังปรับปรุง สามารถเริ่มใช้งานได้เดือน {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY') }} เวลา {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('HH:mm:ss') }}</p>
-    <p>
-      We sincerely apologize for the inconvenience. Our site is currently undergoing scheduled maintenance. <br>
-      The website will be back on {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY') }} at {{ $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('HH:mm:ss') }}
+    <p :class="!$config.dateStartDeploy && $vuetify.breakpoint.width > 447 ? 'text-center' : ''">
+      {{ $t('MESSAGE_DEVELOP') }} <span v-if="$config.dateStartDeploy">{{ $t('MESSAGE_DEVELOP_TIME',{ date: $moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('DD MMMM YYYY'), time:$moment($config.dateStartDeploy, 'YYYY-MM-DDTHH:mm:ss.sssZ').format('HH:mm:ss') }) }}</span>
     </p>
+    <div>
+      <btn-switch-lang />
+    </div>
     <div class="position-center mr-14 pt-2 position-icon-social">
       <v-tooltip class="tooltip-icon-social" bottom>
         <template #activator="{ on, attrs }">
@@ -65,8 +66,12 @@
 </template>
 
 <script>
+import BtnSwitchLang from '~/components/common/I18N/BtnSwitchLang'
 export default {
   name: 'Deployment',
+  components: {
+    BtnSwitchLang
+  },
   head () {
     return {
       title: 'Home'
@@ -81,10 +86,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-// $vuetify.breakpoint.width
 .development {
   .box-center {
-    max-width: 59rem;
+    max-width: 38rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -107,6 +111,10 @@ export default {
 
   .icon-social {
     margin-right: 4px;
+  }
+
+  .text-center {
+    text-align: center;
   }
 
   @media only screen and (max-width: 931px) {
