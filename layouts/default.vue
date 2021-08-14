@@ -13,7 +13,7 @@
         :src="require('~/assets/icons/svg/left-half-circle.svg')"
       >
       <v-row justify="center" no-gutters>
-        <v-col cols="11" class="pt-15">
+        <v-col cols="11" class="pt-16">
           <Nuxt />
         </v-col>
       </v-row>
@@ -61,21 +61,25 @@ export default {
 <style lang="scss" scoped>
 .deploy {
   line-height: 1.64;
+  background-color: #e5e5e5;
 
   .right-half-circle {
     position: absolute;
     left: 89.45%;
     right: -20.55%;
-    top: 0.6%;
+    top: 6.6%;
     bottom: 88.47%;
+    z-index: -5;
   }
 
   .left-half-circle {
     position: absolute;
     width: 398px;
     height: 437px;
-    top: 45%;
-    left: -7%;
+    top: 48%;
+    left: -12%;
+    filter: blur(50px);
+    z-index: -5;
   }
 }
 </style>

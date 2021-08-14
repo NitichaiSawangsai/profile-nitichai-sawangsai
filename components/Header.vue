@@ -1,6 +1,6 @@
 <template>
   <div class="layout-header bg-headeer">
-    <v-container class="mr-3">
+    <v-container class="mr-3 mt-1">
       <btn-switch-lang class="switch-lang-color float-right mt-2-custom" />
       <span class="float-right mr-5">
         <v-tooltip bottom>
@@ -68,7 +68,7 @@ export default {
 <style lang="scss" scoped>
 .layout-header {
   background: #7b7b7b;
-  height: 3.2rem;
+  height: 3.8rem;
   position: fixed;
   width: 100%;
   z-index: 100000px;
