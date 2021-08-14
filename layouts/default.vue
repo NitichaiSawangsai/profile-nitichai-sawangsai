@@ -2,7 +2,6 @@
   <span>
     <v-app v-if="$config.statusProject === 'deploy'" class="deploy" light>
       <Header />
-      <BtnSwitchLang />
       <Nuxt />
       <Chat v-if="statusChat === true" @closeChat="closeChat($event)" />
       <BtnChatBot v-else @openChat="openChat($event)" />
@@ -20,7 +19,6 @@ import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 import BtnChatBot from '~/components/common/ChatBot/BtnChatBot'
 import Chat from '~/components/common/ChatBot/Chat'
-import BtnSwitchLang from '~/components/common/I18N/BtnSwitchLang'
 import Deployment from '~/components/common/Deployment/Deployment'
 
 export default {
@@ -29,7 +27,6 @@ export default {
     Header,
     Footer,
     BtnChatBot,
-    BtnSwitchLang,
     Chat,
     Deployment
   },
