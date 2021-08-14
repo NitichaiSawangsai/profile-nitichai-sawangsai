@@ -11,7 +11,7 @@ export default {
     description,
     keywords: ['Nitichai', 'Sawangsai', 'Nitichai Sawangsai', 'nitichaisawangsai', 'NitichaiSawangsai', 'รับทำเว็บ', 'สร้างเว็บ', 'เว็บแอปพลิเคชัน', 'เว็บไซต์', 'website', 'web application', 'วิศวกรรมซอฟต์แวร์', 'Software Engineering', 'Software Development Engineer', 'NuxtJs', 'Laravel', 'Reactjs', 'Ionic', 'Node js'],
     'og:title': 'Home | Nitichai Sawangsai',
-    'og:url': 'https://nitichai.vercel.app',
+    'og:url': 'https://aom.vercel.app',
     'og:site_name': 'nitichai',
     'og:image': 'https://avatars.githubusercontent.com/u/40546651?v=4',
     'og:description': 'website',
@@ -23,7 +23,7 @@ export default {
     'twitter:card': 'summary_large_image'
   },
   link: {
-    canonical: 'https://nitichai.vercel.app',
+    canonical: 'https://aom.vercel.app',
     icon: '/favicon.ico'
   }
 }
