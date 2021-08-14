@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "deploy": "nuxt generate",
+    "deploy": "nuxt build && nuxt generate",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -29,7 +29,6 @@
     }
   },
   "dependencies": {
-    "@nuxt/image": "0.4.7",
     "@nuxtjs/auth-next": "^5.0.0-1624817847.21691f1",
     "@nuxtjs/moment": "^1.6.1",
     "axios": "^0.21.1",
@@ -39,7 +38,7 @@
     "nuxt": "^2.15.7",
     "nuxt-i18n": "^6.27.3",
     "vee-validate": "^3.4.11",
-    "vuetify": "^2.5.8"
+    "vuetify": "^2.5.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
@@ -62,7 +61,7 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.16.0",
+    "eslint-plugin-vue": "^7.14.0",
     "eslint-plugin-wdio": "^7.4.2",
     "husky": "^4",
     "jest": "^27.0.5",
