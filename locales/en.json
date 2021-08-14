@@ -2,5 +2,7 @@
   "CHAT_BOT":{
     "CHAT_HELLO": "Hello, we're here to help.",
     "ROOM_CHAT": "Room Chat"
-  }
+  },
+  "MESSAGE_DEVELOP": "We sincerely apologize for the inconvenience. Our site is currently undergoing scheduled maintenance.",
+  "MESSAGE_DEVELOP_TIME": "The website will be back on {date} at {time}"
 }
