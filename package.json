@@ -16,7 +16,7 @@
   },
   "engines": {
     "node": "^14.16.1",
-    "yarn": "^1.22.11"
+    "yarn": "^1.22.10"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint",
