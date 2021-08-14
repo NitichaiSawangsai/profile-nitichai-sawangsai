@@ -159,7 +159,7 @@
       </v-col>
     </v-row>
     <v-row class="mt-1" no-gutters>
-      <v-col cols="12" class="d-flex justify-center">
+      <v-col cols="12" class="d-flex">
         <v-col md="6">
           <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
             <img
@@ -170,7 +170,7 @@
             >
           </a>
         </v-col>
-        <v-col md="6">
+        <v-col md="6" class="d-flex justify-end">
           <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
             <img
               width="600px"
@@ -194,7 +194,7 @@
       </v-col>
     </v-row>
     <v-row class="mt-8" no-gutters>
-      <v-col cols="12" class="d-flex justify-center">
+      <v-col cols="12" class="d-flex">
         <v-col md="6">
           <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
             <img
@@ -205,7 +205,7 @@
             >
           </a>
         </v-col>
-        <v-col md="6">
+        <v-col md="6" class="d-flex justify-end">
           <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
             <img
               width="600px"
@@ -217,29 +217,29 @@
         </v-col>
       </v-col>
     </v-row>
-    <v-row class="mt-1" no-gutters>
-      <v-col cols="12" class="d-flex justify-center">
-        <a href="https://medium.com/globish-academia/globish-tech-stack-2020-8320a209da1d" class="mr-4" target="parinthor-saithong">
+    <a href="https://medium.com/globish-academia/globish-tech-stack-2020-8320a209da1d" class="mr-4" target="parinthor-saithong">
+      <v-row class="mt-1" no-gutters>
+        <v-col cols="12" class="d-flex justify-center">
           <img
             width="100%"
             alt="mitraruma-3"
             :src="require('~/assets/icons/png/globish.jpeg')"
           >
-        </a>
-      </v-col>
-    </v-row>
-    <v-row class="mb-9" no-gutters>
-      <v-col cols="12" class="d-flex justify-center">
-        <v-card
-          width="100%"
-          height="4rem"
-          class="card-product center py-5 text-description-scg"
-          style="border-radius: 1px 1px 14px 14px;"
-        >
-          text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-        </v-card>
-      </v-col>
-    </v-row>
+        </v-col>
+      </v-row>
+      <v-row class="mb-9" no-gutters>
+        <v-col cols="12" class="d-flex justify-center">
+          <v-card
+            width="100%"
+            height="4rem"
+            class="card-product center py-5 text-description-scg"
+            style="border-radius: 1px 1px 14px 14px;"
+          >
+            text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+          </v-card>
+        </v-col>
+      </v-row>
+    </a>
   </div>
 </template>
 
