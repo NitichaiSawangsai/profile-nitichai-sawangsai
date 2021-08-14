@@ -136,5 +136,11 @@ export default {
     defaultLocale: 'en',
     strategy: 'no_prefix',
     detectBrowserLanguage: false
+  },
+
+  webVitals: {
+    provider: '', // auto detectd
+    debug: false,
+    disabled: false
   }
 }
