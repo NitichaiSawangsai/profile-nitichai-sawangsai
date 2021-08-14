@@ -45,6 +45,7 @@ export default {
   .m-square {
     width: 59px;
     height: 28px;
+    cursor: pointer;
 
     .label {
       font-weight: 600;

@@ -2,11 +2,24 @@
   <span>
     <v-app v-if="$config.statusProject === 'deploy'" class="deploy" light>
       <Header />
-      <BtnSwitchLang />
-      <Nuxt />
+      <img
+        class="right-half-circle"
+        alt="right-half-circle"
+        :src="require('~/assets/icons/svg/right-half-circle.svg')"
+      >
+      <img
+        class="left-half-circle"
+        alt="left-half-circle"
+        :src="require('~/assets/icons/svg/left-half-circle.svg')"
+      >
+      <v-row justify="center" no-gutters>
+        <v-col cols="11" class="pt-16">
+          <Nuxt />
+        </v-col>
+      </v-row>
+
       <Chat v-if="statusChat === true" @closeChat="closeChat($event)" />
       <BtnChatBot v-else @openChat="openChat($event)" />
-      <Footer />
     </v-app>
     <v-app v-else class="development">
       <Deployment />
@@ -17,19 +30,15 @@
 <script>
 import { mapState } from 'vuex'
 import Header from '~/components/Header'
-import Footer from '~/components/Footer'
 import BtnChatBot from '~/components/common/ChatBot/BtnChatBot'
 import Chat from '~/components/common/ChatBot/Chat'
-import BtnSwitchLang from '~/components/common/I18N/BtnSwitchLang'
 import Deployment from '~/components/common/Deployment/Deployment'
 
 export default {
   name: 'DefaultLayout',
   components: {
     Header,
-    Footer,
     BtnChatBot,
-    BtnSwitchLang,
     Chat,
     Deployment
   },
@@ -52,5 +61,25 @@ export default {
 <style lang="scss" scoped>
 .deploy {
   line-height: 1.64;
+  background-color: #e5e5e5;
+
+  .right-half-circle {
+    position: absolute;
+    left: 89.45%;
+    right: -20.55%;
+    top: 6.6%;
+    bottom: 88.47%;
+    z-index: -5;
+  }
+
+  .left-half-circle {
+    position: absolute;
+    width: 398px;
+    height: 437px;
+    top: 48%;
+    left: -12%;
+    filter: blur(50px);
+    z-index: -5;
+  }
 }
 </style>
