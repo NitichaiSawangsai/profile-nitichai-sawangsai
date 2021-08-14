@@ -26,7 +26,7 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
-    target-branch: 'feature/dependabot'
+    target-branch: 'develop'
     reviewers:
       - nitichaisawangsai
     assignees:
