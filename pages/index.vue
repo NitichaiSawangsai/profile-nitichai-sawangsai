@@ -10,7 +10,7 @@
       >
         <v-row class="mt-1" no-gutters>
           <v-col cols="12" class="d-flex justify-center">
-            <v-col md="8">
+            <v-col md="6">
               <div
                 class="text-home-page1"
               >
@@ -62,7 +62,15 @@
                 </div>
               </div>
             </v-col>
-            <v-col md="4" />
+            <v-col md="6">
+              <img
+                class="img-me"
+                width="488px"
+                height="475px"
+                alt="circle-line"
+                :src="require('~/assets/icons/svg/circle-line.svg')"
+              >
+            </v-col>
           </v-col>
         </v-row>
       </v-card>
@@ -290,6 +298,10 @@ export default {
         color: #c1bebe;
       }
     }
+  }
+
+  .img-me {
+    margin: 2.5rem 4rem;
   }
 
   .btn-heading-color {
