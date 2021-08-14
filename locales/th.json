@@ -4,5 +4,10 @@
     "ROOM_CHAT": "ห้องแชท"
   },
   "MESSAGE_DEVELOP": "ขออภัยในความไม่สะดวก เว็บนี้กำลังปรับปรุง",
-  "MESSAGE_DEVELOP_TIME": "สามารถเริ่มใช้งานได้วันที่ {date} เวลา {time}"
+  "MESSAGE_DEVELOP_TIME": "สามารถเริ่มใช้งานได้วันที่ {date} เวลา {time}",
+  "CAREER": "การพัฒนาซอฟต์แวร์",
+  "WITH": "ของ",
+  "EXPERIENCE_WORK": "ประสบการณ์ทำงาน",
+  "TEXT_PRODUCT": "ตั้งแต่การออกแบบจนถึงมือผู้ใช้งาน",
+  "EXPERIENCE_PROJECT": "โปรเจกต์ที่โดนเด่น"
 }
