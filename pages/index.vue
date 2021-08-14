@@ -4,10 +4,67 @@
       <v-card
         width="100%"
         height="599px"
+        class="mb-2 mt-1"
         style="border-radius: 20px; position: inherit;"
         dark
       >
-        ss
+        <v-row class="mt-1" no-gutters>
+          <v-col cols="12" class="d-flex justify-center">
+            <v-col md="8">
+              <div
+                class="text-home-page1"
+              >
+                <p class="mt-0 text-career">
+                  Software Develop
+                </p>
+                <p class="mt-0 text-career">
+                  with <span> <nitichai-s /> </span>
+                </p>
+
+                <div class="experience">
+                  <p class="text-experience mb-0">
+                    Experience of work
+                  </p>
+                  <a href="https://www.facebook.com/wedotheofficial" class="mr-4" target="wdo">
+                    <img
+                      class="pt-2"
+                      width="60px"
+                      height="52px"
+                      alt="logo-wdo"
+                      :src="require('~/assets/icons/svg/logo-wdo.svg')"
+                    >
+                  </a>
+                  <a href="https://scghome.com" class="mr-4" target="scghome">
+                    <img
+                      width="107px"
+                      height="38px"
+                      alt="logo-scg"
+                      :src="require('~/assets/icons/svg/logo-scg.svg')"
+                    >
+                  </a>
+                  <a href="https://bitkub.com" class="mr-4" target="bitkub">
+                    <img
+                      width="107px"
+                      height="38px"
+                      alt="logo-bitkub"
+                      :src="require('~/assets/icons/svg/logo-bitkub.svg')"
+                    >
+                  </a>
+                  <a href="https://globish.com" class="mr-4" target="globish">
+                    <img
+                      class="pt-2"
+                      width="60px"
+                      height="50px"
+                      alt="logo-globish"
+                      :src="require('~/assets/icons/svg/logo-globish.svg')"
+                    >
+                  </a>
+                </div>
+              </div>
+            </v-col>
+            <v-col md="4" />
+          </v-col>
+        </v-row>
       </v-card>
       <v-btn
         depressed
@@ -104,20 +161,24 @@
     <v-row class="mt-1" no-gutters>
       <v-col cols="12" class="d-flex justify-center">
         <v-col md="6">
-          <img
-            width="600px"
-            height="331px"
-            alt="mitraruma-1"
-            :src="require('~/assets/icons/png/mitraruma-1.png')"
-          >
+          <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
+            <img
+              width="600px"
+              height="331px"
+              alt="mitraruma-1"
+              :src="require('~/assets/icons/png/mitraruma-1.png')"
+            >
+          </a>
         </v-col>
         <v-col md="6">
-          <img
-            width="600px"
-            height="331px"
-            alt="mitraruma-2"
-            :src="require('~/assets/icons/png/mitraruma-2.png')"
-          >
+          <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
+            <img
+              width="600px"
+              height="331px"
+              alt="mitraruma-2"
+              :src="require('~/assets/icons/png/mitraruma-2.png')"
+            >
+          </a>
         </v-col>
       </v-col>
     </v-row>
@@ -135,30 +196,36 @@
     <v-row class="mt-8" no-gutters>
       <v-col cols="12" class="d-flex justify-center">
         <v-col md="6">
-          <img
-            width="600px"
-            height="331px"
-            alt="mitraruma-3"
-            :src="require('~/assets/icons/png/mitraruma-3.png')"
-          >
+          <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
+            <img
+              width="600px"
+              height="331px"
+              alt="mitraruma-3"
+              :src="require('~/assets/icons/png/mitraruma-3.png')"
+            >
+          </a>
         </v-col>
         <v-col md="6">
-          <img
-            width="600px"
-            height="331px"
-            alt="mitraruma-4"
-            :src="require('~/assets/icons/png/mitraruma-4.png')"
-          >
+          <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
+            <img
+              width="600px"
+              height="331px"
+              alt="mitraruma-4"
+              :src="require('~/assets/icons/png/mitraruma-4.png')"
+            >
+          </a>
         </v-col>
       </v-col>
     </v-row>
     <v-row class="mt-1" no-gutters>
       <v-col cols="12" class="d-flex justify-center">
-        <img
-          width="100%"
-          alt="mitraruma-3"
-          :src="require('~/assets/icons/png/globish.jpeg')"
-        >
+        <a href="https://medium.com/globish-academia/globish-tech-stack-2020-8320a209da1d" class="mr-4" target="parinthor-saithong">
+          <img
+            width="100%"
+            alt="mitraruma-3"
+            :src="require('~/assets/icons/png/globish.jpeg')"
+          >
+        </a>
       </v-col>
     </v-row>
     <v-row class="mb-9" no-gutters>
@@ -177,8 +244,13 @@
 </template>
 
 <script>
+import NitichaiS from '~/components/icon/NitichaiS'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    NitichaiS
+  }
 }
 </script>
 
@@ -188,6 +260,37 @@ export default {
   font-size: 16px;
   margin-top: 2.8rem;
   position: inherit !important;
+
+  .text-home-page1 {
+    margin-top: 8rem;
+    margin-left: 4rem;
+    width: 626px;
+    height: 131px;
+
+    .text-career {
+      font-family: $font-poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 58px !important;
+      line-height: 84px;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
+
+    .experience {
+      margin-top: 7.9rem;
+
+      .text-experience {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 50px;
+        letter-spacing: 0.02em;
+        color: #c1bebe;
+      }
+    }
+  }
 
   .btn-heading-color {
     background: linear-gradient(90deg, #fed061 0%, #ed8597 45.53%, #9983ff 100%);
