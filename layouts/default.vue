@@ -1,6 +1,6 @@
 <template>
   <span>
-    <v-app v-if="$config.statusProject === 'deployment'" class="deploy" light>
+    <v-app v-if="$config.statusProject === 'deploy'" class="deploy" light>
       <Header />
       <BtnSwitchLang />
       <Nuxt />
