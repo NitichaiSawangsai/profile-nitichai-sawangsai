@@ -1,28 +1,30 @@
 <template>
   <span>
-    <v-app v-if="$config.statusProject === 'deploy'" class="deploy" light>
+    <v-app v-if="$config.statusProject === 'deploy' && $vuetify.breakpoint.width >= 1024" class="deploy" light>
+      <Loader ref="loadMe" />
       <Header />
-      <img
-        class="right-half-circle"
-        alt="right-half-circle"
-        :src="require('~/assets/icons/svg/right-half-circle.svg')"
-      >
-      <img
-        class="left-half-circle"
-        alt="left-half-circle"
-        :src="require('~/assets/icons/svg/left-half-circle.svg')"
-      >
-      <v-row justify="center" no-gutters>
-        <v-col cols="11" class="pt-16">
-          <Nuxt />
-        </v-col>
-      </v-row>
-
-      <Chat v-if="statusChat === true" @closeChat="closeChat($event)" />
-      <BtnChatBot v-else @openChat="openChat($event)" />
+      <span v-if="statusLoader">
+        <img
+          class="right-half-circle"
+          alt="right-half-circle"
+          :src="require('~/assets/icons/svg/right-half-circle.svg')"
+        >
+        <img
+          class="left-half-circle"
+          alt="left-half-circle"
+          :src="require('~/assets/icons/svg/left-half-circle.svg')"
+        >
+        <v-row justify="center" no-gutters>
+          <v-col cols="11" class="pt-16">
+            <Nuxt />
+          </v-col>
+        </v-row>
+        <chat v-if="statusChat === true" @closeChat="closeChat($event)" />
+        <btn-chat-bot v-else @openChat="openChat($event)" />
+      </span>
     </v-app>
     <v-app v-else class="development">
-      <Deployment />
+      <Deployment v-if="statusLoader" />
     </v-app>
   </span>
 </template>
@@ -33,6 +35,7 @@ import Header from '~/components/Header'
 import BtnChatBot from '~/components/common/ChatBot/BtnChatBot'
 import Chat from '~/components/common/ChatBot/Chat'
 import Deployment from '~/components/common/Deployment/Deployment'
+import Loader from '~/components/common/Loader'
 
 export default {
   name: 'DefaultLayout',
@@ -40,12 +43,22 @@ export default {
     Header,
     BtnChatBot,
     Chat,
-    Deployment
+    Deployment,
+    Loader
   },
+  data: () => ({
+    statusLoader: false
+  }),
   computed: {
     ...mapState({
       statusChat: state => state.chat.statusChat
     })
+  },
+  beforeCreate () {
+    this.statusLoader = false
+  },
+  mounted () {
+    this.statusLoader = true
   },
   methods: {
     closeChat (event) {

@@ -71,7 +71,7 @@ export default {
   height: 3.8rem;
   position: fixed;
   width: 100%;
-  z-index: 100000px;
+  z-index: 100;
 
   ::v-deep .switch-lang-color {
     .label {
