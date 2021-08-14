@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "deploy": "nuxt build && nuxt generate",
+    "deploy": "rm -rf .nuxt && rm -rf dist && nuxt generate",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
