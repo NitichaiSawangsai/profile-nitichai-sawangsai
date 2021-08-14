@@ -4,7 +4,7 @@ updates:
     directory: '/'
     schedule:
       interval: daily
-      time: '00:00'
+      time: '12:00'
     open-pull-requests-limit: 5
     commit-message:
       prefix: fix
@@ -20,13 +20,13 @@ updates:
     directory: '/'
     schedule:
       interval: daily
-      time: '00:00'
+      time: '12:00'
     open-pull-requests-limit: 5
     commit-message:
       prefix: fix
       prefix-development: chore
       include: scope
-    target-branch: 'develop'
+    target-branch: 'feature/dependabot'
     reviewers:
       - nitichaisawangsai
     assignees:
