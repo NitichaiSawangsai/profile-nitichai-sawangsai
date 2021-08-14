@@ -3,7 +3,7 @@
     <v-col cols="12">
       <v-card
         width="100%"
-        height="598px"
+        height="599px"
         style="border-radius: 20px; position: inherit;"
         dark
       >
@@ -86,19 +86,91 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row class="mt-16" no-gutters>
+    <v-row class="mt-10" no-gutters>
       <v-col cols="12" class="d-flex justify-center">
         <v-btn
           depressed
           elevation="2"
           width="423px"
           height="60px"
-          class="mt-16 btn-heading-color heading-project"
+          class="btn-heading-color heading-project"
           raised
           rounded
         >
           Highlighted Projects
         </v-btn>
+      </v-col>
+    </v-row>
+    <v-row class="mt-1" no-gutters>
+      <v-col cols="12" class="d-flex justify-center">
+        <v-col md="6">
+          <img
+            width="600px"
+            height="331px"
+            alt="mitraruma-1"
+            :src="require('~/assets/icons/png/mitraruma-1.png')"
+          >
+        </v-col>
+        <v-col md="6">
+          <img
+            width="600px"
+            height="331px"
+            alt="mitraruma-2"
+            :src="require('~/assets/icons/png/mitraruma-2.png')"
+          >
+        </v-col>
+      </v-col>
+    </v-row>
+    <v-row no-gutters>
+      <v-col cols="12" class="d-flex justify-center px-15">
+        <v-card
+          width="100%"
+          height="4rem"
+          class="card-product center py-5 text-description-scg"
+        >
+          text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row class="mt-8" no-gutters>
+      <v-col cols="12" class="d-flex justify-center">
+        <v-col md="6">
+          <img
+            width="600px"
+            height="331px"
+            alt="mitraruma-3"
+            :src="require('~/assets/icons/png/mitraruma-3.png')"
+          >
+        </v-col>
+        <v-col md="6">
+          <img
+            width="600px"
+            height="331px"
+            alt="mitraruma-4"
+            :src="require('~/assets/icons/png/mitraruma-4.png')"
+          >
+        </v-col>
+      </v-col>
+    </v-row>
+    <v-row class="mt-1" no-gutters>
+      <v-col cols="12" class="d-flex justify-center">
+        <img
+          width="100%"
+          alt="mitraruma-3"
+          :src="require('~/assets/icons/png/globish.jpeg')"
+        >
+      </v-col>
+    </v-row>
+    <v-row class="mb-9" no-gutters>
+      <v-col cols="12" class="d-flex justify-center">
+        <v-card
+          width="100%"
+          height="4rem"
+          class="card-product center py-5 text-description-scg"
+          style="border-radius: 1px 1px 14px 14px;"
+        >
+          text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+        </v-card>
       </v-col>
     </v-row>
   </div>
@@ -112,7 +184,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  font-family: $font-Poppins;
+  font-family: $font-poppins;
   font-size: 16px;
   margin-top: 2.8rem;
   position: inherit !important;
@@ -126,7 +198,7 @@ export default {
     &.heading-design {
       ::v-deep .v-btn__content {
         position: inherit !important;
-        font-family: $font-Poppins;
+        font-family: $font-poppins;
         color: #fff;
         letter-spacing: 0.02em;
         text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
@@ -139,16 +211,18 @@ export default {
     }
 
     &.heading-project {
-      position: inherit !important;
-      font-family: $font-Poppins;
-      color: #fff;
-      letter-spacing: 0.02em;
-      text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
-      font-style: normal;
-      font-weight: 600;
-      font-size: 28px;
-      line-height: 84px;
-      text-transform: none;
+      ::v-deep .v-btn__content {
+        position: inherit !important;
+        font-family: $font-poppins;
+        color: #fff;
+        letter-spacing: 0.02em;
+        text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 84px;
+        text-transform: none;
+      }
     }
   }
 
@@ -161,7 +235,7 @@ export default {
 
   .text-product {
     position: inherit !important;
-    font-family: $font-Poppins;
+    font-family: $font-poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -171,6 +245,13 @@ export default {
   .center {
     display: block;
     text-align: -webkit-center;
+  }
+
+  .text-description-scg {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
   }
 }
 </style>
