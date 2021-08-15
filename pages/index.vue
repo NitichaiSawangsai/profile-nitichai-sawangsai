@@ -527,8 +527,8 @@ export default {
       padding: 0;
       font-family: $font-poppins;
       font-style: normal;
-      color: #fff;
       font-weight: 600;
+      color: #fff;
       font-size: 36px;
 
       @media screen and (max-width: 769px) {
