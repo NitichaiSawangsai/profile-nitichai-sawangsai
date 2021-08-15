@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-header bg-headeer">
+  <div class="layout-header bg-headeer ma-0 pa-0">
     <v-container class="mr-3 mt-1">
       <btn-switch-lang class="switch-lang-color float-right mt-2-custom" />
       <span class="float-right mr-5">
