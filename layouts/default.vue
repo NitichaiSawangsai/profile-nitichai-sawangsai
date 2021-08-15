@@ -1,6 +1,6 @@
 <template>
   <span>
-    <v-app v-if="$config.statusProject === 'deploy' && $vuetify.breakpoint.width >= 1024" class="deploy" light>
+    <v-app v-if="$config.statusProject === 'deploy'" class="deploy" light>
       <Loader ref="loadMe" />
       <Header />
       <span v-if="statusLoader">
