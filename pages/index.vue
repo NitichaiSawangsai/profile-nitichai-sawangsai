@@ -200,7 +200,7 @@
               height="4rem"
               class="card-product center py-5 text-description-scg"
             >
-              text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+              text text text text text text text text text text text text text text text text text text text text text text text text text text text text
             </v-card>
           </v-col>
         </v-row>
