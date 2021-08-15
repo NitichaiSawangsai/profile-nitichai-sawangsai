@@ -97,8 +97,8 @@
         >
           <div class="center py-9">
             <img
-              width="150px"
-              height="150px"
+              width="120px"
+              height="120px"
               alt="icon-website-design"
               :src="require('~/assets/icons/svg/icon-website-design.svg')"
             >
@@ -120,8 +120,8 @@
         >
           <div class="center py-13">
             <img
-              width="150px"
-              height="150px"
+              width="120px"
+              height="120px"
               alt="icon-front-end"
               :src="require('~/assets/icons/svg/icon-front-end.svg')"
             >
@@ -140,8 +140,8 @@
         >
           <div class="center py-13">
             <img
-              width="150px"
-              height="150px"
+              width="120px"
+              height="120px"
               alt="icon-back-end"
               :src="require('~/assets/icons/svg/icon-back-end.svg')"
             >
@@ -271,7 +271,7 @@
       <v-col cols="12" class="d-flex justify-center">
         <v-card
           width="100%"
-          :class="$vuetify.breakpoint.width > 1439 || $vuetify.breakpoint.width < 890? 'card-product' :'card-product center'"
+          :class="$vuetify.breakpoint.width > 1439 ? 'card-product' : ($vuetify.breakpoint.width < 932 ? 'card-product px-5' : 'card-product center')"
           style="border-radius: 1px 1px 14px 14px;"
         >
           <v-col cols="12">
