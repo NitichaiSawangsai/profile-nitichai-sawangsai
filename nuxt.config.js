@@ -136,5 +136,10 @@ export default {
     defaultLocale: 'en',
     strategy: 'no_prefix',
     detectBrowserLanguage: false
+  },
+
+  loading: {
+    color: '#1E1E1E',
+    height: '5px'
   }
 }
