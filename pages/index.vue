@@ -42,14 +42,6 @@
                       :src="require('~/assets/icons/svg/logo-scg.svg')"
                     >
                   </a>
-                  <a href="https://bitkub.com" class="mr-4" target="bitkub">
-                    <img
-                      width="107px"
-                      height="38px"
-                      alt="logo-bitkub"
-                      :src="require('~/assets/icons/svg/logo-bitkub.svg')"
-                    >
-                  </a>
                   <a href="https://globish.com" class="mr-4" target="globish">
                     <img
                       class="pt-2"
@@ -57,6 +49,14 @@
                       height="50px"
                       alt="logo-globish"
                       :src="require('~/assets/icons/svg/logo-globish.svg')"
+                    >
+                  </a>
+                  <a href="https://bitkub.com" class="mr-4" target="bitkub">
+                    <img
+                      width="107px"
+                      height="38px"
+                      alt="logo-bitkub"
+                      :src="require('~/assets/icons/svg/logo-bitkub.svg')"
                     >
                   </a>
                 </div>
@@ -88,7 +88,7 @@
       </v-btn>
     </v-col>
     <v-row class="mt-16" no-gutters>
-      <v-col md="4" sm="12" class="d-flex justify-center px-6">
+      <v-col md="4" sm="4" class="d-flex justify-center px-6">
         <v-card
           width="100%"
           height="320px"
@@ -97,8 +97,8 @@
         >
           <div class="center py-9">
             <img
-              width="150px"
-              height="150px"
+              width="120px"
+              height="120px"
               alt="icon-website-design"
               :src="require('~/assets/icons/svg/icon-website-design.svg')"
             >
@@ -111,7 +111,7 @@
           </div>
         </v-card>
       </v-col>
-      <v-col md="4" sm="12" class="d-flex justify-center px-6">
+      <v-col md="4" sm="4" class="d-flex justify-center px-6">
         <v-card
           width="100%"
           height="320px"
@@ -120,8 +120,8 @@
         >
           <div class="center py-13">
             <img
-              width="150px"
-              height="150px"
+              width="120px"
+              height="120px"
               alt="icon-front-end"
               :src="require('~/assets/icons/svg/icon-front-end.svg')"
             >
@@ -131,7 +131,7 @@
           </div>
         </v-card>
       </v-col>
-      <v-col md="4" sm="12" class="d-flex justify-center px-6">
+      <v-col md="4" sm="4" class="d-flex justify-center px-6">
         <v-card
           width="100%"
           height="320px"
@@ -140,8 +140,8 @@
         >
           <div class="center py-13">
             <img
-              width="150px"
-              height="150px"
+              width="120px"
+              height="120px"
               alt="icon-back-end"
               :src="require('~/assets/icons/svg/icon-back-end.svg')"
             >
@@ -174,8 +174,8 @@
             <v-col md="6">
               <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                 <img
-                  :width="$vuetify.breakpoint.width <= 1024 ? '470px' : '600px'"
-                  height="331px"
+                  :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
+                  :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
                   alt="mitraruma-1"
                   :src="require('~/assets/icons/png/mitraruma-1.png')"
                 >
@@ -184,8 +184,8 @@
             <v-col md="6" class="d-flex justify-end">
               <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                 <img
-                  :width="$vuetify.breakpoint.width <= 1024 ? '470px' : '600px'"
-                  height="331px"
+                  :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
+                  :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
                   alt="mitraruma-2"
                   :src="require('~/assets/icons/png/mitraruma-2.png')"
                 >
@@ -197,7 +197,7 @@
           <v-col cols="12" class="d-flex justify-center px-15">
             <v-card
               width="100%"
-              height="4rem"
+              min-height="4rem"
               class="card-product center py-5 text-description-scg"
             >
               text text text text text text text text text text text text text text text text text text text text text text text text text text text text
@@ -209,8 +209,8 @@
             <v-col md="6">
               <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                 <img
-                  :width="$vuetify.breakpoint.width <= 1024 ? '470px' : '600px'"
-                  height="331px"
+                  :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
+                  :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
                   alt="mitraruma-3"
                   :src="require('~/assets/icons/png/mitraruma-3.png')"
                 >
@@ -219,8 +219,8 @@
             <v-col md="6" class="d-flex justify-end">
               <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                 <img
-                  :width="$vuetify.breakpoint.width <= 1024 ? '470px' : '600px'"
-                  height="331px"
+                  :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
+                  :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
                   alt="mitraruma-4"
                   :src="require('~/assets/icons/png/mitraruma-4.png')"
                 >
@@ -245,7 +245,7 @@
         <v-col cols="12" class="d-flex justify-center">
           <v-card
             width="100%"
-            height="4rem"
+            min-height="4rem"
             class="card-product center py-5 text-description-scg"
             style="border-radius: 1px 1px 14px 14px;"
           >
@@ -271,7 +271,7 @@
       <v-col cols="12" class="d-flex justify-center">
         <v-card
           width="100%"
-          :class="$vuetify.breakpoint.width > 1439 ? 'card-product' :'card-product center'"
+          :class="$vuetify.breakpoint.width > 1439 ? 'card-product' : ($vuetify.breakpoint.width < 932 ? 'card-product px-5' : 'card-product center')"
           style="border-radius: 1px 1px 14px 14px;"
         >
           <v-col cols="12">
@@ -454,6 +454,11 @@ export default {
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
+
+        @media screen and (max-width: 769px) {
+          font-size: 30px !important;
+        }
+
         text-transform: none;
       }
     }
@@ -467,7 +472,12 @@ export default {
         text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
         font-style: normal;
         font-weight: 600;
-        font-size: 28px;
+        font-size: 36px;
+
+        @media screen and (max-width: 769px) {
+          font-size: 30px !important;
+        }
+
         line-height: 84px;
         text-transform: none;
       }
@@ -520,6 +530,11 @@ export default {
       color: #fff;
       font-weight: 600;
       font-size: 36px;
+
+      @media screen and (max-width: 769px) {
+        font-size: 30px !important;
+      }
+
       text-shadow: 0 4px 100px rgba(0, 0, 0, 0.5);
     }
   }
