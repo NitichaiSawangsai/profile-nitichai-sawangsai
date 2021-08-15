@@ -9,5 +9,10 @@
   "WITH": "with",
   "EXPERIENCE_WORK": "Experience of work",
   "TEXT_PRODUCT": "From designs to well-crafted products",
-  "EXPERIENCE_PROJECT": "Highlighted Projects"
+  "EXPERIENCE_PROJECT": "Highlighted Projects",
+  "TOOL": "Tools",
+  "FRONT_END": "Front-end development",
+  "BACK_END": "Back-end development",
+  "APPLICATION": "Application",
+  "WEBSITE_DESIGE": "& website design"
 }

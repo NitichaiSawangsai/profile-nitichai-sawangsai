@@ -102,11 +102,11 @@
               alt="icon-website-design"
               :src="require('~/assets/icons/svg/icon-website-design.svg')"
             >
-            <p class="text-product">
-              Application
+            <p class="text-product mt-3">
+              {{ $t('APPLICATION') }}
             </p>
             <p class="text-product">
-              & website design
+              {{ $t('WEBSITE_DESIGE') }}
             </p>
           </div>
         </v-card>
@@ -125,8 +125,8 @@
               alt="icon-front-end"
               :src="require('~/assets/icons/svg/icon-front-end.svg')"
             >
-            <p class="text-product">
-              Front-end development
+            <p class="text-product mt-7">
+              {{ $t('FRONT_END') }}
             </p>
           </div>
         </v-card>
@@ -145,8 +145,8 @@
               alt="icon-back-end"
               :src="require('~/assets/icons/svg/icon-back-end.svg')"
             >
-            <p class="text-product">
-              Back-end development
+            <p class="text-product mt-7">
+              {{ $t('BACK_END') }}
             </p>
           </div>
         </v-card>
@@ -162,8 +162,9 @@
           class="btn-heading-color heading-project"
           raised
           rounded
-          v-text="$t('EXPERIENCE_PROJECT')"
-        />
+        >
+          {{ $t('EXPERIENCE_PROJECT') }}
+        </v-btn>
       </v-col>
     </v-row>
     <v-row justify="center" no-gutters>
@@ -253,6 +254,135 @@
         </v-col>
       </v-row>
     </a>
+
+    <v-row class="mb-9" no-gutters>
+      <v-col cols="12" class="d-flex justify-center">
+        <v-card
+          width="100%"
+          height="4.5rem"
+          class="card-product center card-tool-header text"
+          style="border-radius: 14px 14px 1px 1px;"
+        >
+          <p class="mb-1 mt-2">
+            {{ $t('TOOL') }}
+          </p>
+        </v-card>
+      </v-col>
+      <v-col cols="12" class="d-flex justify-center">
+        <v-card
+          width="100%"
+          :class="$vuetify.breakpoint.width > 1439 ? 'card-product' :'card-product center'"
+          style="border-radius: 1px 1px 14px 14px;"
+        >
+          <v-col cols="12">
+            <a href="https://kubernetes.io/docs/home/" target="icon-k8s">
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-k8s"
+                :src="require('~/assets/icons/svg/tools/icon-k8s.svg')"
+              >
+            </a>
+            <a href="https://aws.amazon.com/cloudwatch/" target="icon-cloudwatch">
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-cloudwatch"
+                :src="require('~/assets/icons/svg/tools/icon-cloudwatch.svg')"
+              >
+            </a>
+            <a
+              href="https://aws.amazon.com"
+              target="icon-postgre-sql"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-postgre-sql"
+                :src="require('~/assets/icons/svg/tools/icon-postgre-sql.svg')"
+              >
+            </a>
+            <a
+              href="https://www.docker.com"
+              target="icon-docker"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-docker"
+                :src="require('~/assets/icons/svg/tools/icon-docker.svg')"
+              >
+            </a>
+            <a
+              href="https://graphql.org"
+              target="icon-graph-ql"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-graph-ql"
+                :src="require('~/assets/icons/svg/tools/icon-graph-ql.svg')"
+              >
+            </a>
+            <a
+              href="https://aws.amazon.com/s3/"
+              target="icon-aws-s3"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-aws-s3"
+                :src="require('~/assets/icons/svg/tools/icon-aws-s3.svg')"
+              >
+            </a>
+            <a
+              href="https://sonarcloud.io"
+              target="icon-snarcloud"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-snarcloud"
+                :src="require('~/assets/icons/svg/tools/icon-snarcloud.svg')"
+              >
+            </a>
+            <a
+              href="https://eslint.org"
+              target="icon-eslint"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-eslint"
+                :src="require('~/assets/icons/svg/tools/icon-eslint.svg')"
+              >
+            </a>
+            <a
+              href="https://www.npmjs.com/package/faker"
+              target="icon-faker"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-faker"
+                :src="require('~/assets/icons/svg/tools/icon-faker.svg')"
+              >
+            </a>
+            <a
+              href="https://siamchamnankit.co.th/มารู้จัก-deployment-pipeline-ใน-continuous-delivery-กันเถอะ-3953408d83ec"
+              target="icon-deployment-pipeline"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-deployment-pipeline"
+                :src="require('~/assets/icons/svg/tools/icon-deployment-pipeline.svg')"
+              >
+            </a>
+          </v-col>
+        </v-card>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -298,7 +428,6 @@ export default {
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
-        line-height: 50px;
         letter-spacing: 0.02em;
         color: #c1bebe;
       }
@@ -325,22 +454,23 @@ export default {
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
-        line-height: 84px;
         text-transform: none;
       }
     }
 
     &.heading-project {
-      position: inherit !important;
-      font-family: $font-poppins;
-      color: #fff;
-      letter-spacing: 0.02em;
-      text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
-      font-style: normal;
-      font-weight: 600;
-      font-size: 28px;
-      line-height: 84px;
-      text-transform: none;
+      ::v-deep .v-btn__content {
+        position: inherit !important;
+        font-family: $font-poppins;
+        color: #fff;
+        letter-spacing: 0.02em;
+        text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 84px;
+        text-transform: none;
+      }
     }
   }
 
@@ -365,11 +495,33 @@ export default {
     text-align: -webkit-center;
   }
 
+  .px-2-rem {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
   .text-description-scg {
     font-family: $font-poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+  }
+
+  .card-tool-header {
+    background: linear-gradient(90deg, #ffd35f 0%, #ed8597 45.53%, #9983ff 100%);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0 0;
+
+    &.text {
+      margin: 0;
+      padding: 0;
+      font-family: $font-poppins;
+      font-style: normal;
+      color: #fff;
+      font-weight: 600;
+      font-size: 36px;
+      text-shadow: 0 4px 100px rgba(0, 0, 0, 0.5);
+    }
   }
 }
 </style>

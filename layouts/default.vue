@@ -55,10 +55,16 @@ export default {
     })
   },
   beforeCreate () {
+    this.$nextTick(() => {
+      this.$nuxt.$loading?.start()
+    })
     this.statusLoader = false
   },
   mounted () {
     this.statusLoader = true
+    this.$nextTick(() => {
+      setTimeout(() => this.$nuxt.$loading?.finish(), 500)
+    })
   },
   methods: {
     closeChat (event) {

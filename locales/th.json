@@ -9,5 +9,10 @@
   "WITH": "ของ",
   "EXPERIENCE_WORK": "ประสบการณ์ทำงาน",
   "TEXT_PRODUCT": "ตั้งแต่การออกแบบจนถึงมือผู้ใช้งาน",
-  "EXPERIENCE_PROJECT": "โปรเจกต์ที่โดนเด่น"
+  "EXPERIENCE_PROJECT": "โปรเจกต์ที่โดนเด่น",
+  "TOOL": "เครื่องมือ",
+  "FRONT_END": "Front-end development",
+  "BACK_END": "Back-end development",
+  "APPLICATION": "Application",
+  "WEBSITE_DESIGE": "& website design"
 }
