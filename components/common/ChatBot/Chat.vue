@@ -341,8 +341,8 @@ $background-chat: #683db8;
   }
 
   40% {
-    -webkit-transform: scale(1);
     transform: scale(1);
+    -webkit-transform: scale(1);
   }
 }
 </style>
