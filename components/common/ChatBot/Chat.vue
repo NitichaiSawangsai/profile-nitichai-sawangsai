@@ -125,6 +125,8 @@ $background-chat: #683db8;
 
 .footer-chat {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
+  border-top: 2px solid #ededed;
 }
 
 .header-title-col {
