@@ -76,10 +76,17 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['vuetify/dist/vuetify.css'],
+  css: [
+    'vuetify/dist/vuetify.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/head-util.js', '~/plugins/lodash.js', '~/plugins/vuetify.js'],
+  plugins: [
+    '~/plugins/head-util.js',
+    '~/plugins/lodash.js',
+    '~/plugins/vuetify.js',
+    '~/plugins/aos.js'
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
