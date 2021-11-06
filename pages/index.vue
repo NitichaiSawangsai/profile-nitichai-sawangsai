@@ -68,7 +68,7 @@
                   </v-col>
                   <v-col md="6">
                     <img
-                      v-if="$vuetify.breakpoint.width > 1024"
+                      v-if="$vuetify.breakpoint.width > 1322"
                       class="img-me"
                       width="488px"
                       height="475px"
@@ -184,28 +184,30 @@
                 >
               </div>
             </v-col>
-            <v-col :cols="$vuetify.breakpoint.width < 1445 ? 12 : 10">
+            <v-col cols="12">
               <v-row class="mt-1" no-gutters>
                 <v-col cols="12" class="d-flex">
                   <v-col cols="6">
-                    <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
-                      <img
-                        :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
-                        :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
-                        alt="mitraruma-1"
-                        :src="require('~/assets/icons/png/mitraruma-1.png')"
-                      >
-                    </a>
+                    <div data-aos="flip-left">
+                      <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
+                        <img
+                          :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
+                          alt="mitraruma-1"
+                          :src="require('~/assets/icons/png/mitraruma-1.png')"
+                        >
+                      </a>
+                    </div>
                   </v-col>
-                  <v-col cols="6" class="d-flex justify-end">
-                    <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
-                      <img
-                        :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
-                        :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
-                        alt="mitraruma-2"
-                        :src="require('~/assets/icons/png/mitraruma-2.png')"
-                      >
-                    </a>
+                  <v-col cols="6">
+                    <div data-aos="flip-right" style="float: right;">
+                      <a href="https://www.mitraruma.com" target="mitraruma">
+                        <img
+                          :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
+                          alt="mitraruma-2"
+                          :src="require('~/assets/icons/png/mitraruma-2.png')"
+                        >
+                      </a>
+                    </div>
                   </v-col>
                 </v-col>
               </v-row>
@@ -228,24 +230,26 @@
               <v-row class="mt-8" no-gutters>
                 <v-col cols="12" class="d-flex">
                   <v-col cols="6">
-                    <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
-                      <img
-                        :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
-                        :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
-                        alt="mitraruma-3"
-                        :src="require('~/assets/icons/png/mitraruma-3.png')"
-                      >
-                    </a>
+                    <div data-aos="flip-left">
+                      <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
+                        <img
+                          :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
+                          alt="mitraruma-3"
+                          :src="require('~/assets/icons/png/mitraruma-3.png')"
+                        >
+                      </a>
+                    </div>
                   </v-col>
-                  <v-col cols="6" class="d-flex justify-end">
-                    <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
-                      <img
-                        :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
-                        :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
-                        alt="mitraruma-4"
-                        :src="require('~/assets/icons/png/mitraruma-4.png')"
-                      >
-                    </a>
+                  <v-col cols="6">
+                    <div data-aos="flip-right" style="float: right;">
+                      <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
+                        <img
+                          :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
+                          alt="mitraruma-4"
+                          :src="require('~/assets/icons/png/mitraruma-4.png')"
+                        >
+                      </a>
+                    </div>
                   </v-col>
                 </v-col>
               </v-row>

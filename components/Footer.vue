@@ -9,12 +9,15 @@
             Contact to me
           </p>
           <p class="text-email">
-            <span>
+            <a href="mailto:NitichaiSawangsai@gmail.com" class="mr-3" target="scghome"> <span>
               NitichaiSawangsai@gmail.com
             </span>
-            <span class="ml-7">
-              nawarat.nwj@gmail.com
-            </span>
+            </a>
+            <a href="mailto:NitichaiSawangsaiDev@gmail.com" class="mr-3" target="scghome"> <span>
+              <span class="ml-7">
+                nawarat.nwj@gmail.com
+              </span>
+            </span></a>
           </p>
           <div class="mt-6">
             <span class="mr-4">
@@ -100,9 +103,12 @@ export default {
   }
 
   .text-email {
-    font-family: $font-poppins;
-    font-size: 24px;
-    color: #fff;
+    a {
+      font-family: $font-poppins;
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   .text-license {
