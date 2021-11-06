@@ -1,5 +1,5 @@
 {
-  "CHAT_BOT":{
+  "CHAT_BOT": {
     "CHAT_HELLO": "สวัสดีให้เราช่วยอะไรไหม",
     "ROOM_CHAT": "ห้องแชท"
   },
@@ -14,5 +14,6 @@
   "FRONT_END": "Front-end development",
   "BACK_END": "Back-end development",
   "APPLICATION": "Application",
-  "WEBSITE_DESIGE": "& website design"
+  "WEBSITE_DESIGE": "& website design",
+  "CODING_PRINCIPLES": "หลักการเขียน code"
 }
