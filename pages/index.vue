@@ -188,7 +188,7 @@
               <v-row class="mt-1" no-gutters>
                 <v-col cols="12" class="d-flex">
                   <v-col cols="6">
-                    <div style="float: right;">
+                    <div data-aos="flip-left">
                       <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
                           :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
@@ -199,7 +199,7 @@
                     </div>
                   </v-col>
                   <v-col cols="6">
-                    <div style="float: right;">
+                    <div data-aos="flip-right" style="float: right;">
                       <a href="https://www.mitraruma.com" target="mitraruma">
                         <img
                           :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
@@ -230,7 +230,7 @@
               <v-row class="mt-8" no-gutters>
                 <v-col cols="12" class="d-flex">
                   <v-col cols="6">
-                    <div>
+                    <div data-aos="flip-left">
                       <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
                           :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
@@ -241,7 +241,7 @@
                     </div>
                   </v-col>
                   <v-col cols="6">
-                    <div style="float: right;">
+                    <div data-aos="flip-right" style="float: right;">
                       <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
                           :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
