@@ -4,10 +4,7 @@
       <div :class="active ? `wrapper active ${$i18n.locale}` : 'wrapper'">
         <div class="module">
           <div class="label">
-            <span>{{ $i18n.locales[0].name }} | {{ $i18n.locales[1].name }}</span>
-          </div>
-          <div class="label">
-            <span>{{ $i18n.locales[1].name }} | {{ $i18n.locales[0].name }}</span>
+            <span>{{ text }}</span>
           </div>
         </div>
       </div>
@@ -19,12 +16,22 @@
 export default {
   name: 'BtnSwitchLang',
   data: () => ({
-    active: false
+    active: true,
+    text: null
   }),
+  created () {
+    this.text = `${this.$i18n.locales[0].name} | ${this.$i18n.locales[1].name}`
+  },
   methods: {
     changeLocal () {
-      this.active = !this.active
       this.$i18n.setLocale(this.active ? this.$i18n.locales[1].code : this.$i18n.locales[0].code)
+      this.active = !this.active
+
+      setTimeout(() => {
+        this.text = this.active
+          ? `${this.$i18n.locales[0].name} | ${this.$i18n.locales[1].name}`
+          : `${this.$i18n.locales[1].name} | ${this.$i18n.locales[0].name}`
+      }, 500)
     }
   }
 }
@@ -79,7 +86,7 @@ export default {
     &.active {
       .module {
         transition: transform 1.2s ease !important;
-        transform: rotateY(-270deg) !important;
+        transform: rotateY(350deg) !important;
       }
     }
   }

@@ -4,7 +4,7 @@
       <v-card
         width="100%"
         height="599px"
-        class="mb-2 mt-1"
+        class="mb-2 mt-2"
         style="border-radius: 20px; position: inherit;"
         dark
       >
@@ -25,24 +25,15 @@
                   <p class="text-experience mb-0">
                     {{ $t('EXPERIENCE_WORK') }}
                   </p>
-                  <a href="https://www.facebook.com/wedotheofficial" class="mr-4" target="wdo">
-                    <img
-                      class="pt-2"
-                      width="60px"
-                      height="52px"
-                      alt="logo-wdo"
-                      :src="require('~/assets/icons/svg/logo-wdo.svg')"
-                    >
-                  </a>
-                  <a href="https://scghome.com" class="mr-4" target="scghome">
+                  <a href="https://bitkub.com" target="bitkub">
                     <img
                       width="107px"
                       height="38px"
-                      alt="logo-scg"
-                      :src="require('~/assets/icons/svg/logo-scg.svg')"
+                      alt="logo-bitkub"
+                      :src="require('~/assets/icons/svg/logo-bitkub.svg')"
                     >
                   </a>
-                  <a href="https://globish.com" class="mr-4" target="globish">
+                  <a href="https://globish.com" target="globish">
                     <img
                       class="pt-2"
                       width="60px"
@@ -51,12 +42,22 @@
                       :src="require('~/assets/icons/svg/logo-globish.svg')"
                     >
                   </a>
-                  <a href="https://bitkub.com" class="mr-4" target="bitkub">
+
+                  <a href="https://www.facebook.com/wedotheofficial" class="mr-2" target="wdo">
+                    <img
+                      class="pt-2"
+                      width="60px"
+                      height="52px"
+                      alt="logo-wdo"
+                      :src="require('~/assets/icons/svg/logo-wdo.svg')"
+                    >
+                  </a>
+                  <a href="https://scghome.com" class="mr-3" target="scghome">
                     <img
                       width="107px"
                       height="38px"
-                      alt="logo-bitkub"
-                      :src="require('~/assets/icons/svg/logo-bitkub.svg')"
+                      alt="logo-scg"
+                      :src="require('~/assets/icons/svg/logo-scg.svg')"
                     >
                   </a>
                 </div>
@@ -84,15 +85,16 @@
         raised
         rounded
       >
-        {{ $t('TEXT_PRODUCT') }}
+        <span data-aos="fade-left" class="pt-1">{{ $t('TEXT_PRODUCT') }}</span>
       </v-btn>
     </v-col>
-    <v-row class="mt-16" no-gutters>
+    <v-row class="mt-10" no-gutters>
       <v-col md="4" sm="4" class="d-flex justify-center px-6">
         <v-card
           width="100%"
           height="320px"
           class="card-product"
+          data-aos="fade-right"
           dark
         >
           <div class="center py-9">
@@ -116,6 +118,7 @@
           width="100%"
           height="320px"
           class="card-product"
+          data-aos="fade-down"
           dark
         >
           <div class="center py-13">
@@ -136,6 +139,7 @@
           width="100%"
           height="320px"
           class="card-product"
+          data-aos="fade-left"
           dark
         >
           <div class="center py-13">
@@ -163,15 +167,24 @@
           raised
           rounded
         >
-          {{ $t('EXPERIENCE_PROJECT') }}
+          <span data-aos="fade-left" class="pt-2">{{ $t('EXPERIENCE_PROJECT') }}</span>
         </v-btn>
       </v-col>
     </v-row>
     <v-row justify="center" no-gutters>
+      <v-col cols="12" class="mt-15 ml-13">
+        <div style="border-left: 13px solid #c71e30; height: 4rem;">
+          <img
+            style="margin-top: -15px;"
+            alt="name-mitraruma"
+            :src="require('~/assets/icons/png/name-mitraruma.png')"
+          >
+        </div>
+      </v-col>
       <v-col :cols="$vuetify.breakpoint.width < 1445 ? 12 : 10">
         <v-row class="mt-1" no-gutters>
           <v-col cols="12" class="d-flex">
-            <v-col md="6">
+            <v-col cols="6">
               <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                 <img
                   :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
@@ -181,7 +194,7 @@
                 >
               </a>
             </v-col>
-            <v-col md="6" class="d-flex justify-end">
+            <v-col cols="6" class="d-flex justify-end">
               <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                 <img
                   :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
@@ -206,7 +219,7 @@
         </v-row>
         <v-row class="mt-8" no-gutters>
           <v-col cols="12" class="d-flex">
-            <v-col md="6">
+            <v-col cols="6">
               <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                 <img
                   :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
@@ -216,7 +229,7 @@
                 >
               </a>
             </v-col>
-            <v-col md="6" class="d-flex justify-end">
+            <v-col cols="6" class="d-flex justify-end">
               <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                 <img
                   :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
@@ -379,6 +392,149 @@
                 :src="require('~/assets/icons/svg/tools/icon-deployment-pipeline.svg')"
               >
             </a>
+            <a
+              href="https://laravel.com/docs/8.x/installation"
+              target="icon-laravel"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="icon-laravel"
+                :src="require('~/assets/icons/png/tools/icon-laravel.png')"
+              >
+            </a>
+            <a
+              href="https://docs.nestjs.com"
+              target="logo-nestjs"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-nestjs"
+                :src="require('~/assets/icons/png/tools/logo-nestjs.png')"
+              >
+            </a>
+            <a
+              href="https://nodejs.org/en/docs/"
+              target="logo-nodejs"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-nodejs"
+                :src="require('~/assets/icons/png/tools/logo-nodejs.png')"
+              >
+            </a>
+            <a
+              href="https://expressjs.com/en/5x/api.html"
+              target="logo-node-experess"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-node-experess"
+                :src="require('~/assets/icons/png/tools/logo-node-experess.png')"
+              >
+            </a>
+            <a
+              href="https://nuxtjs.org/docs/get-started/installation"
+              target="logo-nuxtjs"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-nuxtjs"
+                :src="require('~/assets/icons/png/tools/logo-nuxtjs.png')"
+              >
+            </a>
+            <a
+              href="https://vuejs.org/v2/guide/"
+              target="logo-vuejs"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-vuejs"
+                :src="require('~/assets/icons/png/tools/logo-vuejs.png')"
+              >
+            </a>
+            <a
+              href="https://docs.python.org/3/"
+              target="logo-python"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-python"
+                :src="require('~/assets/icons/png/tools/logo-python.png')"
+              >
+            </a>
+            <a
+              href="https://docs.github.com/en/actions"
+              target="logo-github-action"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-github-action"
+                :src="require('~/assets/icons/png/tools/logo-github-action.png')"
+              >
+            </a>
+            <a
+              href="https://docs.github.com/en/actions"
+              target="logo-ionic"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-ionic"
+                :src="require('~/assets/icons/png/tools/logo-ionic.png')"
+              >
+            </a>
+            <a
+              href="https://www.serverless.com/framework/docs/providers/aws/"
+              target="logo-serverless"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-serverless"
+                :src="require('~/assets/icons/png/tools/logo-serverless.png')"
+              >
+            </a>
+            <a
+              href="https://readme.drone.io"
+              target="logo-drone"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-drone"
+                :src="require('~/assets/icons/png/tools/logo-drone.png')"
+              >
+            </a>
+            <a
+              href="https://bitbucket.org/product/features/pipelines"
+              target="logo-bitbucket"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-bitbucket"
+                :src="require('~/assets/icons/png/tools/logo-bitbucket.png')"
+              >
+            </a>
+            <a
+              href="https://aws.amazon.com/rds"
+              target="logo-ams-rds"
+            >
+              <img
+                height="159px"
+                width="209px"
+                alt="logo-ams-rds"
+                :src="require('~/assets/icons/png/tools/logo-ams-rds.png')"
+              >
+            </a>
           </v-col>
         </v-card>
       </v-col>
@@ -388,12 +544,14 @@
 
 <script>
 import NitichaiS from '~/components/icon/NitichaiS'
+import aosMixin from '~/mixins/aos'
 
 export default {
   name: 'Home',
   components: {
     NitichaiS
-  }
+  },
+  mixins: [aosMixin]
 }
 </script>
 
