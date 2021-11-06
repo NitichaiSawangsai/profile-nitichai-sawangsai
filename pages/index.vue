@@ -211,9 +211,14 @@
             <v-card
               width="100%"
               min-height="4rem"
-              class="card-product center py-5 text-description-scg"
+              class="card-product center py-5 bg-description-scg"
             >
-              text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+              <span>
+                text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+
+              </span>
             </v-card>
           </v-col>
         </v-row>
@@ -243,31 +248,48 @@
         </v-row>
       </v-col>
     </v-row>
-    <a href="https://medium.com/globish-academia/globish-tech-stack-2020-8320a209da1d" class="mr-4" target="parinthor-saithong">
-      <v-row class="mt-1" no-gutters>
-        <v-col cols="12" class="d-flex justify-center">
-          <img
-            width="100%"
-            min-height="580rem"
-            alt="mitraruma-3"
-            :src="require('~/assets/icons/png/globish.jpeg')"
-          >
-        </v-col>
-      </v-row>
-      <v-row class="mb-9" no-gutters>
-        <v-col cols="12" class="d-flex justify-center">
-          <v-card
-            width="100%"
-            min-height="4rem"
-            class="card-product center py-5 text-description-scg"
-            style="border-radius: 1px 1px 14px 14px;"
-          >
-            text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-          </v-card>
-        </v-col>
-      </v-row>
-    </a>
-
+    <v-col cols="12" class="ml-5">
+      <div style="border-left: 13px solid #c71e30; height: 4rem;">
+        <img
+          width="439px"
+          style="margin-top: -15px; border-radius: 40px 40px 0 0;"
+          alt="hello-globish"
+          :src="require('~/assets/icons/png/hello-globish.png')"
+        >
+      </div>
+    </v-col>
+    <v-col cols="12" class="mt-2">
+      <a style="text-decoration: none;" class="mr-4" href="https://medium.com/globish-academia/globish-tech-stack-2020-8320a209da1d" target="parinthor-saithong">
+        <v-row class="mt-1" no-gutters>
+          <v-col cols="12" class="d-flex justify-center">
+            <img
+              width="100%"
+              min-height="580rem"
+              alt="mitraruma-3"
+              class="img-globish"
+              :src="require('~/assets/icons/png/globish.jpeg')"
+            >
+          </v-col>
+        </v-row>
+        <v-row class="mb-9" no-gutters>
+          <v-col cols="12" class="d-flex justify-center">
+            <v-card
+              width="100%"
+              min-height="4rem"
+              class="card-product center py-5 bg-description-globish"
+              style="border-radius: 1px 1px 14px 14px;"
+            >
+              <span>
+                text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+              </span>
+            </v-card>
+          </v-col>
+        </v-row>
+      </a>
+    </v-col>
     <v-row class="mb-9" no-gutters>
       <v-col cols="12" class="d-flex justify-center">
         <v-card
@@ -562,6 +584,26 @@ export default {
   margin-top: 2.8rem;
   position: inherit !important;
 
+  .img-globish {
+    border-radius: 40px 40px 0 0 !important;
+  }
+
+  .bg-description-globish {
+    background: #8b1a2f !important;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 30px 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    >span {
+      font-family: $font-poppins;
+      font-weight: 600;
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
   .text-home-page1 {
     margin-top: 8rem;
     margin-left: 4rem;
@@ -668,11 +710,24 @@ export default {
     padding-left: 2rem;
   }
 
-  .text-description-scg {
-    font-family: $font-poppins;
+  .bg-description-scg {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    background: rgba(0, 0, 0, 0.58);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+
+    >span {
+      font-family: $font-poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 40px;
+      color: #fff;
+    }
   }
 
   .card-tool-header {
