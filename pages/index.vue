@@ -8,7 +8,7 @@
               width="100%"
               height="599px"
               class="mb-2 mt-2"
-              style="border-radius: 20px; position: inherit;"
+              style="position: inherit; border-radius: 20px;"
               dark
             >
               <v-row class="mt-1" no-gutters>
@@ -198,13 +198,13 @@
                       </a>
                     </div>
                   </v-col>
-                  <v-col cols="6">
-                    <div data-aos="flip-right" style="float: right;">
-                      <a href="https://www.mitraruma.com" target="mitraruma">
+                  <v-col cols="6" class="justify-end" align="right">
+                    <div data-aos="flip-left">
+                      <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
                           :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
-                          alt="mitraruma-2"
-                          :src="require('~/assets/icons/png/mitraruma-2.png')"
+                          alt="mitraruma-1"
+                          :src="require('~/assets/icons/png/mitraruma-1.png')"
                         >
                       </a>
                     </div>
@@ -216,7 +216,7 @@
                   <v-card
                     width="100%"
                     min-height="4rem"
-                    class="card-product center py-5 bg-description-scg"
+                    class="card-product py-5 bg-description-scg"
                   >
                     <span data-aos="fade-up">
                       text text text text text text text text text text text text text text text text text text text text text text text text text text text text
@@ -240,12 +240,12 @@
                       </a>
                     </div>
                   </v-col>
-                  <v-col cols="6">
-                    <div data-aos="flip-right" style="float: right;">
+                  <v-col cols="6" class="justify-end" align="right">
+                    <div data-aos="flip-right">
                       <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
                           :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
-                          alt="mitraruma-4"
+                          alt="mitraruma-3"
                           :src="require('~/assets/icons/png/mitraruma-4.png')"
                         >
                       </a>
@@ -283,7 +283,7 @@
                   <v-card
                     width="100%"
                     min-height="4rem"
-                    class="card-product center py-5 bg-description-globish"
+                    class="card-product py-5 bg-description-globish"
                     style="border-radius: 1px 1px 14px 14px;"
                   >
                     <span data-aos="fade-up">
@@ -627,8 +627,8 @@ export default {
     background: #8b1a2f !important;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 30px 30px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     >span {
       font-family: $font-poppins;
@@ -637,7 +637,6 @@ export default {
       color: #fff;
       text-decoration: none;
       text-align: left;
-      padding: 1rem 3rem;
     }
   }
 
