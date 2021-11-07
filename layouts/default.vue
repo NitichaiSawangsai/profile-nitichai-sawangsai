@@ -7,7 +7,7 @@
             <Loader ref="loadMe" />
             <Header />
             <span v-if="statusLoader">
-              <img
+              <!-- <img
                 class="right-half-circle"
                 alt="right-half-circle"
                 :src="require('~/assets/icons/svg/right-half-circle.svg')"
@@ -16,7 +16,7 @@
                 class="left-half-circle"
                 alt="left-half-circle"
                 :src="require('~/assets/icons/svg/left-half-circle.svg')"
-              >
+              > -->
               <v-row justify="center" no-gutters>
                 <v-col cols="11" class="pt-16">
                   <Nuxt />
