@@ -221,7 +221,7 @@
                     <span data-aos="fade-up">
                       text text text text text text text text text text text text text text text text text text text text text text text text text text text text
                       text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-                      text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                      text text text text text text text text text text text text text text text text text text text text text
 
                     </span>
                   </v-card>
@@ -290,7 +290,7 @@
                       text text text text text text text text text text text text text text text text text text text text text text text
                       text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
                       text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-                      text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                      text text text text text text text text text text text text text text text text text text text text text text text
                       <br>credit: <a href="https://www.facebook.com/pirsquareff" target="parinthor-saithong"> Parinthorn Saithong</a>
                     </span>
                   </v-card>
