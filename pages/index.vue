@@ -68,7 +68,7 @@
                   </v-col>
                   <v-col md="6">
                     <img
-                      v-if="$vuetify.breakpoint.width > 1024"
+                      v-if="$vuetify.breakpoint.width > 1322"
                       class="img-me"
                       width="488px"
                       height="475px"
@@ -184,29 +184,27 @@
                 >
               </div>
             </v-col>
-            <v-col :cols="$vuetify.breakpoint.width < 1445 ? 12 : 10">
+            <v-col cols="12">
               <v-row class="mt-1" no-gutters>
                 <v-col cols="12" class="d-flex">
                   <v-col cols="6">
                     <div data-aos="flip-left">
                       <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
-                          :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
-                          :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
+                          :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
                           alt="mitraruma-1"
                           :src="require('~/assets/icons/png/mitraruma-1.png')"
                         >
                       </a>
                     </div>
                   </v-col>
-                  <v-col cols="6" class="d-flex justify-end">
-                    <div data-aos="flip-right">
+                  <v-col cols="6" class="justify-end" align="right">
+                    <div data-aos="flip-left">
                       <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
-                          :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
-                          :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
-                          alt="mitraruma-2"
-                          :src="require('~/assets/icons/png/mitraruma-2.png')"
+                          :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
+                          alt="mitraruma-1"
+                          :src="require('~/assets/icons/png/mitraruma-1.png')"
                         >
                       </a>
                     </div>
@@ -218,7 +216,7 @@
                   <v-card
                     width="100%"
                     min-height="4rem"
-                    class="card-product center py-5 bg-description-scg"
+                    class="card-product py-5 bg-description-scg"
                   >
                     <span data-aos="fade-up">
                       text text text text text text text text text text text text text text text text text text text text text text text text text text text text
@@ -235,21 +233,19 @@
                     <div data-aos="flip-left">
                       <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
-                          :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
-                          :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
+                          :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
                           alt="mitraruma-3"
                           :src="require('~/assets/icons/png/mitraruma-3.png')"
                         >
                       </a>
                     </div>
                   </v-col>
-                  <v-col cols="6" class="d-flex justify-end">
+                  <v-col cols="6" class="justify-end" align="right">
                     <div data-aos="flip-right">
                       <a href="https://www.mitraruma.com" class="mr-4" target="mitraruma">
                         <img
-                          :width="$vuetify.breakpoint.width <= 1024 ? $vuetify.breakpoint.width < 935 ? '300px' : '470px' : '600px'"
-                          :height="$vuetify.breakpoint.width < 935 ? '221px' : '331px'"
-                          alt="mitraruma-4"
+                          :width="$vuetify.breakpoint.width < 1344 ? $vuetify.breakpoint.width < 1002 ? '370px' : '500px' : '100%'"
+                          alt="mitraruma-3"
                           :src="require('~/assets/icons/png/mitraruma-4.png')"
                         >
                       </a>
@@ -287,7 +283,7 @@
                   <v-card
                     width="100%"
                     min-height="4rem"
-                    class="card-product center py-5 bg-description-globish"
+                    class="card-product py-5 bg-description-globish"
                     style="border-radius: 1px 1px 14px 14px;"
                   >
                     <span data-aos="fade-up">
@@ -631,8 +627,8 @@ export default {
     background: #8b1a2f !important;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 30px 30px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     >span {
       font-family: $font-poppins;
@@ -641,7 +637,6 @@ export default {
       color: #fff;
       text-decoration: none;
       text-align: left;
-      padding: 1rem 3rem;
     }
   }
 
