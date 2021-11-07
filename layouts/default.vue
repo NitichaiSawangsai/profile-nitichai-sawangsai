@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0 ma-0 s" style="padding: 0;">
+  <v-container fluid class="pa-0 ma-0" style="padding: 0;">
     <v-row no-gutters>
       <v-col cols="12">
         <span>

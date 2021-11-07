@@ -4,7 +4,7 @@
       <v-col cols="12">
         <div class="layout-header bg-headeer ma-0 pa-0">
           <v-container class="mr-3 mt-1">
-            <btn-switch-lang class="switch-lang-color float-right mt-2-custom" />
+            <btn-switch-lang class="switch-lang-color float-right mt-2-custom ml-2" />
             <span class="float-right mr-5">
               <v-tooltip bottom>
                 <template #activator="{ on, attrs }">
