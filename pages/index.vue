@@ -8,7 +8,7 @@
               width="100%"
               height="599px"
               class="mb-2 mt-2"
-              style="border-radius: 20px; position: inherit;"
+              style="position: inherit; border-radius: 20px;"
               dark
             >
               <v-row class="mt-1" no-gutters>
