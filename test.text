@@ -1,2 +1,3 @@
 git push ปกติ
 create git tag develop-1.0
+git fix test tag develop-1.0
