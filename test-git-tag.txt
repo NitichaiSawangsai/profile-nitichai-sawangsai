@@ -1,3 +1,4 @@
 test 1
 create feature v1 dev sit
 fix bug in sit feature v1
+create feature v2 dev
