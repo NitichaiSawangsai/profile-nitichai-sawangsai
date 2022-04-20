@@ -1,3 +1,4 @@
 test 1
-create feature v1
+create feature v1 dev sit
+create feature v2 dev
 
