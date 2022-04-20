@@ -5750,10 +5750,10 @@ eslint-plugin-vue@^7.1.0, eslint-plugin-vue@^7.16.0, eslint-plugin-vue@^7.9.0:
     semver "^6.3.0"
     vue-eslint-parser "^7.10.0"
 
-eslint-plugin-wdio@^7.4.2:
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-wdio/-/eslint-plugin-wdio-7.4.2.tgz#c60a3227900bf651b11892624b730c2a20584601"
-  integrity sha512-tkISFycJmRFMKsEjetRcAmWSHKJKnw5rKHDxfE7Ob3tF5lbmYlCLfNKH0UwanOpSdulpe52s3K+CBHSd6qUUNQ==
+eslint-plugin-wdio@^7.19.4:
+  version "7.19.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-wdio/-/eslint-plugin-wdio-7.19.4.tgz#613202ef5228ad9018e4e44cb86f6072ba6de45e"
+  integrity sha512-l3Hs5/b0EAlekJMoiqOM66pevaClA2CCiECVuh5ByrYZ3yWjF6W/JkkjiA3WRllRH2BbcuDoI9OaVD3F3wPedQ==
 
 eslint-scope@^4.0.3:
   version "4.0.3"
