@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      tag_version: ${{ steps.tagging.outputs.new_version }}
+      
     steps:
       - uses: actions/checkout@v2
       - name: Bump version and push tag
