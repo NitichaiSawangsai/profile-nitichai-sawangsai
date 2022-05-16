@@ -20,7 +20,7 @@ jobs:
 
   build:
     needs: [run-lint]
-    name: Build a docker image ${{ steps.branch-name.outputs.current_branch }}
+    name: Build a docker image
     runs-on: ubuntu-latest
     outputs:
       tag_version: '${{ steps.tagging.outputs.new_version }}'
@@ -35,7 +35,7 @@ jobs:
           pre_release_branches: develop
           default_bump: patch
           fetch_all_tags: true
-          tag_prefix: 'test-'
+          tag_prefix: '${{ steps.branch-name.outputs.current_branch }}-'
       # - name: Create a GitHub Tag version
       #   uses: ncipollo/release-action@v1
       #   with:
