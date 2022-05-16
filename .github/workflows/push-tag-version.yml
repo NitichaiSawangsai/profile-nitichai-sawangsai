@@ -20,14 +20,14 @@ jobs:
 
   build:
     needs: [run-lint]
-    name: Build a docker image
+    name: Build a docker image ${{ steps.branch-name.outputs.current_branch }}
     runs-on: ubuntu-latest
     outputs:
       tag_version: '${{ steps.tagging.outputs.new_version }}'
     steps:
       - uses: actions/checkout@v3
       - id: tagging
-        name: Bump version and push tag ${{ steps.branch-name.outputs.current_branch }}
+        name: Bump version and push tag 
         uses: mathieudutour/github-tag-action@v6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
