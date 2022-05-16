@@ -5,20 +5,39 @@ on:
       - develop
       - master
 jobs:
-  build:
+  run-lint:
+    name: Run linters
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-      - name: Bump version and push tag
-        id: tag_version
+      - uses: actions/setup-node@v2.4.0
+        with:
+          node-version: 14
+      - name: Install Node.js dependencies
+        run: yarn install
+      - name: Run linters
+        run: yarn run lint
+
+  build:
+    needs: [run-lint]
+    name: Build a docker image
+    runs-on: ubuntu-latest
+    outputs:
+      tag_version: '${{ steps.tagging.outputs.new_version }}'
+    steps:
+      - uses: actions/checkout@v3
+      - id: tagging
+        name: Bump version and push tag
         uses: mathieudutour/github-tag-action@v6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Create a GitHub Tag version
-        uses: ncipollo/release-action@v1
-        with:
-          tag: ${{ steps.tag_version.outputs.new_tag }}
-          name: Release ${{ steps.tag_version.outputs.new_tag }}
-          body: ${{ steps.tag_version.outputs.changelog }}
+          release_branches: master
+          pre_release_branches: develop
+          default_bump: patch
+          fetch_all_tags: true
+
+
+
+
+ 
 
