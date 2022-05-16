@@ -35,7 +35,7 @@ jobs:
           pre_release_branches: develop
           default_bump: patch
           fetch_all_tags: true
-          tag_prefix: ${{ steps.extract_branch.outputs.branch }}
+          tag_prefix: ${{ steps.branch-name.outputs.current_branch }}
       # - name: Create a GitHub Tag version
       #   uses: ncipollo/release-action@v1
       #   with:
