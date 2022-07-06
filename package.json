@@ -62,7 +62,7 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.16.0",
+    "eslint-plugin-vue": "^9.2.0",
     "eslint-plugin-wdio": "^7.4.2",
     "husky": "^4",
     "jest": "^27.3.1",
