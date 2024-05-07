@@ -5,8 +5,8 @@
         <div class="home">
           <v-col cols="12">
             <v-card
-              width="100%"
               height="599px"
+              width="100%"
               class="mb-2 mt-2"
               style="position: inherit; border-radius: 20px;"
               dark
