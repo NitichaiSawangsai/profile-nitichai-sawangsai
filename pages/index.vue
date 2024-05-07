@@ -12,7 +12,7 @@
               dark
             >
               <v-row class="mt-1" no-gutters>
-                <v-col cols="12" class="justify-center d-flex">
+                <v-col cols="12" class="d-flex justify-center">
                   <v-col md="6">
                     <div
                       class="text-home-page1"
