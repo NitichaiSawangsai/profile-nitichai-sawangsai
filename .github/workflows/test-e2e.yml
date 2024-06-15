@@ -1,7 +1,10 @@
 name: Run Test E2E
 on:
-  push:
-    branches: 
+  # push:
+  #   branches: 
+  #     - release
+  pull_request:
+    branches:
       - release
 jobs:
   test-e2e:
