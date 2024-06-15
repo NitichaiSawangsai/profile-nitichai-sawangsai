@@ -1,0 +1,37 @@
+name: Run Test E2E Required Input
+on:
+  workflow_dispatch:
+    inputs:
+      version-tag:
+        description: 'Version tag or branch to test'
+        required: true
+        default: 'master'
+
+jobs:
+  test-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository Test E2E
+        uses: actions/checkout@v3
+        with:
+          repository: NitichaiSawangsai/cypress-ex1  
+          ref: ${{ github.event.inputs.version-tag }} 
+          token: ${{ secrets.REPO_CYPRESS_EX1_ACCESS_TOKEN }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos
