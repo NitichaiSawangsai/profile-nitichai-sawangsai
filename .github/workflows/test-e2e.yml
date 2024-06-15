@@ -17,6 +17,7 @@ jobs:
         with:
           repository: NitichaiSawangsai/cypress-ex1  # เปลี่ยนเป็น repository ของคุณ
           ref: release  # ตรวจสอบจาก branch release
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
           token: ${{ github.token }}  # ใช้ Personal Access Token ที่มีสิทธิ์ในการอ่าน Repository REPO_CYPRESS_EX1_ACCESS_TOKEN
 
       # Install NPM dependencies, cache them correctly
