@@ -15,12 +15,9 @@ jobs:
       - name: Checkout Repository Test E2E
         uses: actions/checkout@v3
         with:
-          repository: NitichaiSawangsai/cypress-ex1  # เปลี่ยนเป็น repository ของคุณ
-          ref: master  # ตรวจสอบจาก branch release
-          token: ${{ github.token }}  # ใช้ Personal Access Token ที่มีสิทธิ์ในการอ่าน Repository REPO_CYPRESS_EX1_ACCESS_TOKEN
-
-      - name: Install dependencies
-        run: npm install
+          repository: NitichaiSawangsai/cypress-ex1  # เปลี่ยนเป็น repository
+          ref: master  # ตรวจสอบจาก branch 
+          token: ${{ github.token }}  # ใช้ Personal Access Token ที่มีสิทธิ์ในการอ่าน Repository 
 
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
