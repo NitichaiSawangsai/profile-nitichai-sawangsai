@@ -13,33 +13,36 @@ jobs:
       # action clones the repository into this environment, 
       # making your code available for the workflow steps that follow.
       - name: Checkout Repository Test E2E
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          repository: NitichaiSawangsai/cypress-ex1  # เปลี่ยนเป็น repository ของคุณ
-          ref: master  # ตรวจสอบจาก branch release
-          token: ${{ github.token }}  # ใช้ Personal Access Token ที่มีสิทธิ์ในการอ่าน Repository REPO_CYPRESS_EX1_ACCESS_TOKEN
-
-      - name: Install dependencies
-        run: npm install
+          repository: NitichaiSawangsai/cypress-ex1  # เปลี่ยนเป็น repository
+          ref: master  # ตรวจสอบจาก branch 
+          token: ${{ github.token }}  # ใช้ Personal Access Token ที่มีสิทธิ์ในการอ่าน Repository 
 
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       # https://github.com/cypress-io/github-action
       - name: Cypress run
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_KEY }}
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
       # after the test run completes
       # store videos and any screenshots
       # NOTE: screenshots will be generated only if E2E test failed
       # thus we store screenshots only on failures
       # Alternative: create and commit an empty cypress/screenshots folder
       # to always have something to upload
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
       # Test run video was always captured, so this action uses "always()" condition
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-videos
